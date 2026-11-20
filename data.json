@@ -2378,6 +2378,1493 @@
       "release": "2026-10",
       "published": "2026-08-11",
       "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-863c1a430f87cf88",
+      "title": "@mention a colleague's Autopilot in Teams channels and group chats",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Teams"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-fb0eed80ddbfef17",
+      "title": "Additional sales skills and Sales plugin in Copilot in PowerPoint",
+      "type": "Ignite",
+      "url": "https://msmessagecenter.com/MC1558023/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1558023",
+      "products": [
+        "PowerPoint"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-7b72f1a6ec6a3270",
+      "title": "Admin controls for Business Applications in Work IQ in the Microsoft 365 and Power Platform admin centers",
+      "type": "Ignite",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/11/18/business-applications-work-iq-generally-available/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Work IQ"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-e0bf74b1df703f70",
+      "title": "Agent 365 Business Analytics app for AI spend, usage and value insights",
+      "type": "Ignite",
+      "url": "https://msmessagecenter.com/MC1557727/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1557727",
+      "products": [
+        "Agent 365"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-dcd991039ed6dc12",
+      "title": "Agent Chat web part to embed Copilot agents in SharePoint pages",
+      "type": "Ignite",
+      "url": "https://msmessagecenter.com/MC1559633/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1559633",
+      "products": [
+        "SharePoint"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-94f68453d426574f",
+      "title": "Agent Optimizer for continuous agent improvement in Microsoft Foundry",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Foundry"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-62d08857b8c2d3c1",
+      "title": "Agent sharing for multiple makers in Copilot Studio",
+      "type": "Ignite",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/build-and-manage-business-processes-with-microsoft-copilot-studio/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-94b6816d032266c6",
+      "title": "Agent usage insights in admin center without Agent 365 license",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Agent 365"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-3f3080b941f93b7e",
+      "title": "Agentic traffic acquisition in Entra Global Secure Access",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Entra"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-b5f70048ca589651",
+      "title": "App building in Copilot Cowork",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-copilot-cowork-at-ignite-2026/4572242",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-ef0c30d8f1c14d70",
+      "title": "Auto adjusts reasoning effort per task in Copilot Cowork",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-copilot-cowork-at-ignite-2026/4572242",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-bab97c711291fbe1",
+      "title": "Auto subagents run work in parallel across models in Copilot Cowork",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-copilot-cowork-at-ignite-2026/4572242",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-bd3b1fcbb4ead72a",
+      "title": "Automations view for scheduled Copilot tasks in Home",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/home-your-starting-place-for-work-in-the-microsoft-copilot-app/4573945",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-405401a87727e841",
+      "title": "Autopilot capabilities for other agents: own email address and secured Microsoft 365 resources",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/autopilot-meet-your-trusted-personal-teammate/4572611",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-a19fd760a001d54b",
+      "title": "Autopilot in Copilot Workspaces",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-f79bd42bb344274e",
+      "title": "Brand Kit in Copilot Cowork",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-copilot-cowork-at-ignite-2026/4572242",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-42ccd6e440b2baae",
+      "title": "Business Applications in Work IQ for developers via Work IQ MCP server, CLI and Dataverse Ask API",
+      "type": "Ignite",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/11/18/business-applications-work-iq-generally-available/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Work IQ"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-ff7d439d474aef7f",
+      "title": "Business Applications in Work IQ in Copilot Cowork",
+      "type": "Ignite",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/11/18/business-applications-work-iq-generally-available/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Copilot Cowork",
+        "Work IQ"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-51b33f770b30b0ff",
+      "title": "Business plugins in Microsoft IQ",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-8a6c14a398ebfa2d",
+      "title": "Business skills and auto-generated semantic models in Business Applications in Work IQ",
+      "type": "Ignite",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/11/18/business-applications-work-iq-generally-available/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Work IQ"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-207e7c8efd21534c",
+      "title": "Business skills in Dynamics 365 ERP with built-in procurement, expense and commerce skills",
+      "type": "Ignite",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/11/19/unlock-new-possibilities-for-dynamics-365-erp-with-work-iq-and-business-skills/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Dynamics 365"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-19",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-6b60676abc31fa06",
+      "title": "Classify node uses a decision-scoring model by default in Copilot Studio workflows",
+      "type": "Ignite",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/build-and-manage-business-processes-with-microsoft-copilot-studio/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-fc1ef8a22c9723de",
+      "title": "Collaboration features in Copilot Workspaces: activity feed, team presence and group ownership",
+      "type": "Ignite",
+      "url": "https://msmessagecenter.com/MC1559638/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1559638",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-631636b8b9be0001",
+      "title": "Continue using a selected model after license usage limits with Copilot Credits",
+      "type": "Ignite",
+      "url": "https://msmessagecenter.com/MC1557754/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1557754",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-e386074ba77f113b",
+      "title": "Copilot Code on iOS, Android and Mac with local sandbox on Windows",
+      "type": "Ignite",
+      "url": "https://msmessagecenter.com/MC1519871/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1519871",
+      "products": [
+        "Windows"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-21",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-30169da3bed2e09c",
+      "title": "Copilot Cowork in GCC",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-copilot-cowork-at-ignite-2026/4572242",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-3ebee10fac2e7c2c",
+      "title": "Copilot Studio command-line tools (CLI)",
+      "type": "Ignite",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/build-and-manage-business-processes-with-microsoft-copilot-studio/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-9e8e27b4ca432092",
+      "title": "Copilot app mode handoffs from Chat to Cowork",
+      "type": "Ignite",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=577841",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "577841",
+      "products": [
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-27",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-7500b30d5f0a6458",
+      "title": "Copilot cost management spend insights by service, user and model in the Microsoft 365 admin center",
+      "type": "Ignite",
+      "url": "https://msmessagecenter.com/MC1557727/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1557727",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-a3a05118c9765f05",
+      "title": "Copilot in OneNote turns notes into Word, Excel or PowerPoint files",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/office-at-ignite-2026-from-apps-to-agentic-system-of-work/4572226",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "PowerPoint",
+        "Excel",
+        "Word"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-678df465605fd54f",
+      "title": "Copilot in the new Windows Search on the taskbar",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Windows"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-988f0a8b09f94481",
+      "title": "Copilot memory profile available to agents through the Work IQ MCP tool",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/the-end-of-starting-over-how-work-iq-helps-copilot-understand-you-and-your-work/4571169",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Work IQ"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-b113a7f771f4114a",
+      "title": "Copilot starter prompts guided training in Learning Agent",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/learning-agent-build-ai-and-copilot-skills-through-everyday-work/4573000",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Learning Agent"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-30559da161065ded",
+      "title": "Cowork in Edge for Business",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-copilot-cowork-at-ignite-2026/4572242",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Copilot Cowork",
+        "Microsoft Edge"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-54d1d2549797384e",
+      "title": "Create Copilot Studio agents and workflows from Cowork and Copilot Code",
+      "type": "Ignite",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/build-and-manage-business-processes-with-microsoft-copilot-studio/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Copilot Studio",
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-c047ae90555c9bec",
+      "title": "Curated AI Skills Navigator playlists in Learning Agent",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/learning-agent-build-ai-and-copilot-skills-through-everyday-work/4573000",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Learning Agent"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-106a6dcd58d9307b",
+      "title": "Dataverse and Dynamics 365 data as a knowledge source for Agent Builder declarative agents",
+      "type": "Ignite",
+      "url": "https://msmessagecenter.com/MC1558817/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1558817",
+      "products": [
+        "Dynamics 365"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-49aacdcb91b55314",
+      "title": "Dynamics 365 Customer Service plugin for Copilot",
+      "type": "Ignite",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/11/17/microsoft-ignite-2026-introducing-dynamics-365-in-copilot/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Dynamics 365"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-0f610e4381e95ce6",
+      "title": "Dynamics 365 ERP apps plugin with 39+ finance and operations skills",
+      "type": "Ignite",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/11/17/microsoft-ignite-2026-introducing-dynamics-365-in-copilot/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Dynamics 365"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-6dcfb02c02de8bf0",
+      "title": "Dynamics 365 ERP in Work IQ: ask ERP questions in Copilot Chat and act through the ERP MCP server",
+      "type": "Ignite",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/11/19/unlock-new-possibilities-for-dynamics-365-erp-with-work-iq-and-business-skills/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Work IQ",
+        "Dynamics 365"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-19",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-c25535627f5a3d65",
+      "title": "Email writing style memory in Copilot",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/the-end-of-starting-over-how-work-iq-helps-copilot-understand-you-and-your-work/4571169",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-52b4991865fc66c2",
+      "title": "Entra Agent ID for Autopilot agents",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Entra"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-b04fcb537125fcd5",
+      "title": "Entra Agent ID for discovered local agents such as GitHub Copilot CLI and Claude Code",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Entra"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-b315f5cd31a0d4ef",
+      "title": "Fabric IQ in Edit with Copilot in Excel",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Excel",
+        "Microsoft Fabric"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-4add96b906d31bb5",
+      "title": "Fabric data backend for apps on Copilot Managed Runtime",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Fabric"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-46bf1f6e97bb5062",
+      "title": "Fast mode for Claude Opus and GPT-6.1 Sol in Copilot Cowork",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-copilot-cowork-at-ignite-2026/4572242",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-30c9f0d75b7ab352",
+      "title": "GPT-6.2 Astra and GPT-6.2 Sol models in Copilot Cowork",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-copilot-cowork-at-ignite-2026/4572242",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-d24729e40a268470",
+      "title": "Interactive Insights: natural-language analysis in Agent 365 Business Analytics",
+      "type": "Ignite",
+      "url": "https://msmessagecenter.com/MC1557766/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1557766",
+      "products": [
+        "Agent 365"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-026849ba1902f598",
+      "title": "Intune and Execution Containers to set boundaries for approved local agents",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Intune"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-0beffa64db3fb981",
+      "title": "Knowledge graphs and topic-based retrieval in Foundry IQ",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Foundry"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-6f1418f31a3161ae",
+      "title": "Learning and permissive mode for Windows agent containers",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Windows"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-3641dfb4f303360a",
+      "title": "Local PC diagnostics in Copilot on Windows",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Windows"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-fe7e7870ac856d17",
+      "title": "Local and shadow agent and MCP server governance in Agent 365",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Agent 365"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-bfc9dc5f759b776b",
+      "title": "Local file management in Copilot on Windows",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Windows"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-f5f6e71849dd3528",
+      "title": "MCP Firewall in Entra Global Secure Access",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Entra"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-d5a10334e760a3ce",
+      "title": "MCP server governance from Azure AI Gateway and LiteLLM in Agent 365",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Agent 365"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-b32230e01f4a5397",
+      "title": "Managed agent browsing in Edge for Business",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Edge"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-d2a2f30ba9c0e53e",
+      "title": "Microsoft Contact Center Intelligence generally available",
+      "type": "Ignite",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/11/18/microsoft-contact-center-intelligence-now-generally-available-transform-customer-interactions/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-b35dd9eb7a8e3350",
+      "title": "Microsoft Copilot SDK 2.0 with native Rust runtime",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-da703b19560ea1c4",
+      "title": "Microsoft IQ context for GitHub Copilot, Foundry and any agent harness via MCP",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Foundry"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-79cf823fcc541c77",
+      "title": "Microsoft MCP Server for Enterprise for Entra data",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Entra"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-4e7ea11c133b5dca",
+      "title": "Network visibility and control for local agents in Entra Global Secure Access",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Entra"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-dc31a11e90cac0f1",
+      "title": "On-premises app access with agent identities in Windows 365 for Agents",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Windows"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-bb64b1a0b225f751",
+      "title": "Organization AI usage policy in Learning Agent Copilot training",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/learning-agent-build-ai-and-copilot-skills-through-everyday-work/4573000",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Learning Agent"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-fd63949ad97af839",
+      "title": "Organizational context in Copilot answers: company terminology, attribute definitions and guidelines (Work IQ)",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/copilot-that-understands-your-organization-introducing-people-and-org-context-in/4573356",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Work IQ"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-b1d44271b0c69fde",
+      "title": "Pages in Copilot",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/office-at-ignite-2026-from-apps-to-agentic-system-of-work/4572226",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-fc8d32b98fe27ae7",
+      "title": "Persistent Cloud PCs for always-on agents in Windows 365 for Agents",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Windows"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-623dc0f86471c989",
+      "title": "Plugins and skills governance for Copilot and Cowork",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-d7306095e3b6302d",
+      "title": "Plugins in navigation in the new Copilot Home",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/plugins-at-microsoft-ignite-2026/4569951",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-b784641177891b8e",
+      "title": "Proactive task recommendations in Copilot Cowork",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-copilot-cowork-at-ignite-2026/4572242",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-c7ca36816f88ba57",
+      "title": "Prompt coaching in Learning Agent",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/learning-agent-build-ai-and-copilot-skills-through-everyday-work/4573000",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Learning Agent"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-5421087c4d56339d",
+      "title": "Public Copilot Plugin Catalog on microsoft.com",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/plugins-at-microsoft-ignite-2026/4569951",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-f0821062a5049355",
+      "title": "Purview DLP blocks Copilot from unlabeled sensitive files",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-security-blog/secure-the-data-that-fuels-ai-with-microsoft-purview/4573266",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Purview"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-1248581435cf315f",
+      "title": "Purview DLP for attachments, linked files and text in Copilot prompts",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Purview"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-d2ecdb11056937ff",
+      "title": "Purview data security for endpoint AI agents on Windows",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Purview",
+        "Windows"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-0de961523034810e",
+      "title": "Refreshed Copilot experience in OneNote with cross-note reasoning and editing",
+      "type": "Ignite",
+      "url": "https://msmessagecenter.com/MC1559641/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1559641",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-3194d87ae5509abd",
+      "title": "Reporting API for Copilot Credits in Power Platform admin center",
+      "type": "Ignite",
+      "url": "https://msmessagecenter.com/MC1558020/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1558020",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-5119b213349d98c6",
+      "title": "Reusable plugins, skills, tools and agents via Microsoft IQ",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-3bfcc01213c04db3",
+      "title": "Sales Cloud in Teams",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Teams"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-bd22a6c18987320d",
+      "title": "Salesforce in Copilot plugin with 38+ sales skills",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-cb21954e7d5c1574",
+      "title": "SharePoint indexed knowledge source in Foundry IQ",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "SharePoint",
+        "Microsoft Foundry"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-e382c55fb20a0a94",
+      "title": "Skills recorder in Edge for Business for Cowork skills",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Copilot Cowork",
+        "Microsoft Edge"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-d69df64b596e82f4",
+      "title": "Updated Dynamics 365 Sales plugin for Copilot",
+      "type": "Ignite",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/11/17/microsoft-ignite-2026-introducing-dynamics-365-in-copilot/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Dynamics 365"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-3990e0ddfafdc4de",
+      "title": "Use case classification for agent sessions and Copilot Cowork activity",
+      "type": "Ignite",
+      "url": "https://msmessagecenter.com/MC1557759/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1557759",
+      "products": [
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-10bb73360bae1ebb",
+      "title": "Viva Engage plugin for Copilot Cowork",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-copilot-cowork-at-ignite-2026/4572242",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Copilot Cowork",
+        "Viva"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-155db7795c66892f",
+      "title": "Web IQ Scopes to control web sources for agents",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-091865adeb87cfe1",
+      "title": "Web IQ for agents with Auto mode, Places and Weather",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-9cab1c9c5742fd3f",
+      "title": "Windows 365 for Agents billed with Copilot Credits",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Windows"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-0af8ee1999a520b7",
+      "title": "Windows 365 for Agents computer-use tool in Copilot Studio",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Copilot Studio",
+        "Windows"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-8bf58fb40cbc7e19",
+      "title": "Windows process container controls for AI agents",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Windows"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-68f1c9deb1b3d0e9",
+      "title": "Work IQ agent actions for creating content and long-running workflows",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Work IQ"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-c1c211dccb570659",
+      "title": "Work IQ granular agent policies and human approvals",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Work IQ"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-eb6f450079e014d6",
+      "title": "Work IQ integrations with OpenAI and Anthropic platforms",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Work IQ"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-a3a3cc8a37ea3c97",
+      "title": "Work IQ listen capability for event-triggered agents",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Work IQ"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-77686a402fb8464e",
+      "title": "Work IQ memory across Microsoft 365 apps (Word, Excel, PowerPoint, Workspaces, Pages, Outlook and Teams)",
+      "type": "Ignite",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/the-end-of-starting-over-how-work-iq-helps-copilot-understand-you-and-your-work/4571169",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Work IQ",
+        "PowerPoint",
+        "Excel",
+        "Word",
+        "Teams",
+        "Outlook"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-8713f2e493050016",
+      "title": "Work IQ retrieval and memory for Copilot and agents",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Work IQ"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-e482d88ec9fde030",
+      "title": "Work IQ suggests relevant Copilot Workspaces based on current workstreams",
+      "type": "Ignite",
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "publisher": "Microsoft Ignite 2026 Book of News",
+      "reference": "",
+      "products": [
+        "Work IQ"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-6582d9c9d60d853c",
+      "title": "Workspace memory in Copilot Workspaces",
+      "type": "Ignite",
+      "url": "https://msmessagecenter.com/MC1559632/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1559632",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
     }
   ]
 }

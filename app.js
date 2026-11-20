@@ -2,16 +2,18 @@
 
 const allowedHosts = new Set([
   "www.microsoft.com", "techcommunity.microsoft.com", "blogs.microsoft.com",
-  "devblogs.microsoft.com", "msmessagecenter.com",
+  "devblogs.microsoft.com", "msmessagecenter.com", "news.microsoft.com",
 ]);
-const types = new Set(["Roadmap", "Blog", "Message Center"]);
-const state = { items: [], type: "" };
+const types = new Set(["Roadmap", "Blog", "Message Center", "Ignite"]);
+const requestedType = new URLSearchParams(location.search).get("source");
+const state = { items: [], type: types.has(requestedType) ? requestedType : "" };
 const byId = (id) => document.getElementById(id);
 
 function publicUrl(value) {
   const url = new URL(value);
   if (url.protocol !== "https:" || !allowedHosts.has(url.hostname) ||
-      url.username || url.password || url.port) {
+      url.username || url.password || url.port ||
+      (url.hostname === "news.microsoft.com" && url.pathname !== "/events/ignite/2026/book-of-news/")) {
     throw new Error("The snapshot contains an unapproved source URL.");
   }
   return url.href;
@@ -37,7 +39,7 @@ function dateLabel(value) {
 function card(item) {
   const article = element("article", "card");
   const top = element("div", "card-top");
-  top.append(element("span", "kind", item.type),
+  top.append(element("span", "kind", item.type === "Ignite" ? "Ignite 2026" : item.type),
     element("span", "reference", item.reference));
   article.append(top, element("h3", "", item.title));
   const tags = element("div", "tags");
@@ -66,7 +68,7 @@ function render() {
   const items = state.items.filter((item) =>
     (!state.type || item.type === state.type) &&
     (!product || item.products.includes(product)) &&
-    `${item.title} ${item.reference} ${item.products.join(" ")} ${item.status} ${item.publisher}`
+    `${item.title} ${item.reference} ${item.products.join(" ")} ${item.status} ${item.publisher} ${item.type === "Ignite" ? "Ignite 2026" : item.type}`
       .toLocaleLowerCase().includes(search));
   const sort = byId("sort").value;
   items.sort((a, b) => {
@@ -103,6 +105,7 @@ async function load() {
     state.items = data.items;
     byId("snapshot-date").textContent = dateLabel(data.snapshotDate);
     byId("total-count").textContent = state.items.length;
+    byId("ignite-count").textContent = `(${state.items.filter((item) => item.type === "Ignite").length})`;
     [["roadmap-count", "Roadmap"], ["blog-count", "Blog"], ["message-count", "Message Center"]]
       .forEach(([id, type]) => { byId(id).textContent = state.items.filter((x) => x.type === type).length; });
     [...new Set(state.items.flatMap((item) => item.products))].sort().forEach((product) => {
@@ -126,6 +129,10 @@ byId("search").addEventListener("input", render);
 ["product", "sort"].forEach((id) => byId(id).addEventListener("change", render));
 document.querySelectorAll(".tab").forEach((tab) => tab.addEventListener("click", () => {
   state.type = tab.dataset.type;
+  const url = new URL(location.href);
+  if (state.type) url.searchParams.set("source", state.type);
+  else url.searchParams.delete("source");
+  history.replaceState(null, "", url);
   render();
 }));
 byId("reset").addEventListener("click", () => {
@@ -133,6 +140,9 @@ byId("reset").addEventListener("click", () => {
   byId("search").value = "";
   byId("product").value = "";
   byId("sort").value = "recent";
+  const url = new URL(location.href);
+  url.searchParams.delete("source");
+  history.replaceState(null, "", url);
   render();
   byId("search").focus();
 });

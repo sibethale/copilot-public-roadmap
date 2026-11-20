@@ -25,6 +25,7 @@ test("the public snapshot has a strict allowlisted schema and no private fields"
   assert.doesNotMatch(raw, privateSignals);
   const ids = new Set();
   const urls = new Set();
+  const announcements = new Set();
   for (const item of data.items) {
     assert.deepEqual(Object.keys(item).sort(), keys);
     for (const [key, value] of Object.entries(item)) {
@@ -32,9 +33,16 @@ test("the public snapshot has a strict allowlisted schema and no private fields"
     }
     assert.ok(item.title.trim().length > 5);
     assert.ok(!ids.has(item.id), `Duplicate id ${item.id}`);
-    assert.ok(!urls.has(item.url), `Duplicate source ${item.url}`);
     ids.add(item.id);
-    urls.add(item.url);
+    if (item.type === "Ignite") {
+      const key = `${item.title}\n${item.url}`;
+      assert.ok(!announcements.has(key), `Duplicate Ignite announcement ${item.title}`);
+      announcements.add(key);
+      assert.equal(item.id, `ignite-${createHash("sha256").update(`${item.url}\n${item.title}`).digest("hex").slice(0, 16)}`);
+    } else {
+      assert.ok(!urls.has(item.url), `Duplicate source ${item.url}`);
+      urls.add(item.url);
+    }
     assert.ok(Array.isArray(item.products) && item.products.length > 0);
     assert.ok(item.products.every((product) => typeof product === "string" && product.trim()));
     assert.equal(item.verifiedOn, data.snapshotDate);
@@ -51,7 +59,29 @@ test("source types must match exact public hosts, paths and identifiers", () => 
     const url = new URL(item.url);
     assert.equal(url.protocol, "https:");
     assert.equal(url.username + url.password + url.port + url.hash, "");
-    if (item.type === "Roadmap") {
+    if (item.type === "Ignite") {
+      assert.equal(item.release + item.status, "");
+      if (url.hostname === "news.microsoft.com") {
+        assert.equal(url.pathname, "/events/ignite/2026/book-of-news/");
+        assert.equal(item.publisher, "Microsoft Ignite 2026 Book of News");
+        assert.equal(item.reference + url.search, "");
+      } else if (url.hostname === "msmessagecenter.com") {
+        assert.match(item.reference, /^MC\d+$/);
+        assert.equal(url.pathname, `/${item.reference}/`);
+        assert.match(item.publisher, /independent mirror/);
+        assert.equal(url.search, "");
+      } else if (url.pathname === "/en-us/microsoft-365/roadmap") {
+        assert.equal(url.hostname, "www.microsoft.com");
+        assert.match(item.reference, /^\d+$/);
+        assert.deepEqual([...url.searchParams.keys()], ["id"]);
+        assert.equal(url.searchParams.get("id"), item.reference);
+        assert.equal(item.publisher, "Microsoft Copilot Roadmap");
+      } else {
+        assert.ok(blogs.has(url.hostname));
+        assert.ok(url.pathname.includes("/blog/") && !url.pathname.includes("/category/"));
+        assert.equal(item.reference + url.search, "");
+      }
+    } else if (item.type === "Roadmap") {
       assert.equal(url.hostname, "www.microsoft.com");
       assert.equal(url.pathname, "/en-us/microsoft-365/roadmap");
       assert.deepEqual([...url.searchParams.keys()], ["id"]);
@@ -75,6 +105,17 @@ test("source types must match exact public hosts, paths and identifiers", () => 
       assert.equal(item.reference + item.release + item.status + url.search, "");
     }
   }
+});
+
+test("the complete reviewed Ignite set includes individual Book of News announcements", () => {
+  const ignite = data.items.filter((item) => item.type === "Ignite");
+  assert.equal(ignite.length, 98);
+  assert.equal(ignite.filter((item) => new URL(item.url).hostname === "news.microsoft.com").length, 45);
+  assert.equal(ignite.filter((item) => item.title.includes("unlabeled sensitive files")).length, 1);
+  assert.ok(ignite.find((item) => item.title.includes("unlabeled sensitive files")).url.includes("/microsoft-security-blog/"));
+  const html = readFileSync(new URL("index.html", root), "utf8");
+  assert.ok(html.includes('data-type="Ignite"'));
+  assert.ok(html.includes('id="ignite-count"'));
 });
 
 test("static site contains no credentials, raw exports, trackers or unsafe rendering", () => {

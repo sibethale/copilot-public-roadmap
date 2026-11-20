@@ -57,11 +57,12 @@
         </label>
       </div>
       <div class="filter-row">
-        <div class="tabs" role="group" aria-label="Filter by source">
+        <div class="tabs" role="group" aria-label="Filter by source or event">
           <button type="button" class="tab active" data-type="" aria-pressed="true" disabled>All updates</button>
           <button type="button" class="tab" data-type="Roadmap" aria-pressed="false" disabled>Roadmap</button>
           <button type="button" class="tab" data-type="Blog" aria-pressed="false" disabled>Blogs</button>
           <button type="button" class="tab" data-type="Message Center" aria-pressed="false" disabled>Message Center</button>
+          <button type="button" class="tab" data-type="Ignite" aria-pressed="false" disabled>Ignite 2026 <span id="ignite-count"></span></button>
         </div>
         <p id="result-count" role="status" aria-live="polite">Loading public updates...</p>
       </div>
@@ -73,6 +74,7 @@
     <details class="policy">
       <summary>What is included &mdash; and what is not</summary>
       <p>Only information retrieved from anonymously accessible public sources is published. Microsoft roadmap features use Microsoft's public roadmap API. Blog entries are grouped by public article, not by private annotations.</p>
+      <p>The <strong>Ignite 2026</strong> filter adds individual announcements verified against Microsoft's public Book of News, product blogs, public roadmap, and labelled Message Center mirrors. Several announcements may share a source. These event details sit alongside the existing source-level feed.</p>
       <p>Message Center links point to <strong>MS Message Center, an independent third-party mirror</strong>, not the authenticated Microsoft 365 admin center. Mirror content may lag or differ from the original announcement.</p>
       <p>No NDA material, internal notes, customer details, assignees, private links, credentials, or tenant-specific messages are included. Unverified or unavailable sources are omitted. Roadmap estimates are not commitments; consult the linked source for current details.</p>
     </details>

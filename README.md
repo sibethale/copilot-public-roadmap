@@ -9,8 +9,13 @@ The site publishes public-source records, not an export of an internal list:
 
 - Roadmap features are selected by public feature ID and populated exclusively
   from Microsoft's anonymous public roadmap API.
-- Blog links are deduplicated by article. Titles come from the public article,
+- The existing blog feed is deduplicated by article. Titles come from the public article,
   not private notes or edited list titles.
+- The **Ignite 2026** filter adds 98 individual, reviewed announcements alongside
+  the source-level feed. Concise factual titles are verified against the public
+  Book of News, product blogs, public roadmap, or labelled Message Center
+  mirrors. Multiple announcements can share a source; they are not duplicate
+  article records. Open `?source=Ignite` to link directly to this view.
 - Message Center entries come only from anonymously accessible pages on
   MS Message Center, an independent third-party mirror. The mirror is not the
   Microsoft 365 admin center and is labelled accordingly.
@@ -44,6 +49,13 @@ using GitHub Pages. Display the review date in `snapshotDate`. Roadmap estimates
 can change, and an unavailable feature may have been removed from the live API.
 This intentionally conservative snapshot is not a claim that every public
 announcement has been included.
+
+Ignite announcement records use the `Ignite` type. Their IDs are derived from
+the public URL and reviewed title, never private list identifiers. Do not copy
+release dates or statuses from private annotations: those fields remain empty
+for event details unless separately verified. Preserve the existing source
+records when refreshing event details. Review every claim, not just whether
+its linked page is accessible; use a more precise public citation where needed.
 
 ## Site
 
