@@ -3,10 +3,12 @@ import { createHash } from "node:crypto";
 import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import test from "node:test";
+import { runInNewContext } from "node:vm";
 
 const root = new URL("../", import.meta.url);
 const raw = readFileSync(new URL("data.json", root), "utf8");
 const data = JSON.parse(raw);
+const creditsGuideUrl = "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/ai/CopilotCreditsGuide.pdf";
 const keys = [
   "id", "title", "type", "url", "publisher", "reference", "products", "status",
   "release", "published", "verifiedOn",
@@ -65,6 +67,10 @@ test("source types must match exact public hosts, paths and identifiers", () => 
         assert.equal(url.pathname, "/events/ignite/2026/book-of-news/");
         assert.equal(item.publisher, "Microsoft Ignite 2026 Book of News");
         assert.equal(item.reference + url.search, "");
+      } else if (url.hostname === "cdn-dynmedia-1.microsoft.com") {
+        assert.equal(url.href, creditsGuideUrl);
+        assert.equal(item.publisher, "Microsoft Copilot Credits Guide (PDF)");
+        assert.equal(item.reference, "");
       } else if (url.hostname === "msmessagecenter.com") {
         assert.match(item.reference, /^MC\d+$/);
         assert.equal(url.pathname, `/${item.reference}/`);
@@ -109,13 +115,36 @@ test("source types must match exact public hosts, paths and identifiers", () => 
 
 test("the complete reviewed Ignite set includes individual Book of News announcements", () => {
   const ignite = data.items.filter((item) => item.type === "Ignite");
-  assert.equal(ignite.length, 98);
+  assert.equal(ignite.length, 99);
   assert.equal(ignite.filter((item) => new URL(item.url).hostname === "news.microsoft.com").length, 45);
   assert.equal(ignite.filter((item) => item.title.includes("unlabeled sensitive files")).length, 1);
   assert.ok(ignite.find((item) => item.title.includes("unlabeled sensitive files")).url.includes("/microsoft-security-blog/"));
+  const guides = ignite.filter((item) => item.url === creditsGuideUrl);
+  assert.equal(guides.length, 1);
+  assert.equal(guides[0].title, "AI Flex Plan: one monetary commitment for Copilot Credits and eligible Microsoft AI consumption");
+  assert.equal(guides[0].published, "2026-11");
   const html = readFileSync(new URL("index.html", root), "utf8");
   assert.ok(html.includes('data-type="Ignite"'));
   assert.ok(html.includes('id="ignite-count"'));
+});
+
+test("the browser permits only the reviewed public PDF, not arbitrary CDN documents", () => {
+  const js = readFileSync(new URL("app.js", root), "utf8");
+  const publicUrl = runInNewContext(`${js.split("\nfunction element(")[0]}\npublicUrl;`, {
+    URL, URLSearchParams, location: { search: "" },
+  });
+  assert.equal(publicUrl(creditsGuideUrl), creditsGuideUrl);
+  for (const value of [
+    creditsGuideUrl.replace("CopilotCreditsGuide.pdf", "OtherGuide.pdf"),
+    `${creditsGuideUrl}?download=1`,
+    `${creditsGuideUrl}#page=4`,
+    creditsGuideUrl.replace("https:", "http:"),
+    creditsGuideUrl.replace("https://", "https://user:password@"),
+    creditsGuideUrl.replace(".com/", ".com:8443/"),
+    creditsGuideUrl.replace(".com/", ".com.example.org/"),
+  ]) {
+    assert.throws(() => publicUrl(value), /unapproved source URL/);
+  }
 });
 
 test("static site contains no credentials, raw exports, trackers or unsafe rendering", () => {

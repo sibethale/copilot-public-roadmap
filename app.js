@@ -3,7 +3,9 @@
 const allowedHosts = new Set([
   "www.microsoft.com", "techcommunity.microsoft.com", "blogs.microsoft.com",
   "devblogs.microsoft.com", "msmessagecenter.com", "news.microsoft.com",
+  "cdn-dynmedia-1.microsoft.com",
 ]);
+const publicDocumentUrl = "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/ai/CopilotCreditsGuide.pdf";
 const types = new Set(["Roadmap", "Blog", "Message Center", "Ignite"]);
 const requestedType = new URLSearchParams(location.search).get("source");
 const state = { items: [], type: types.has(requestedType) ? requestedType : "" };
@@ -13,7 +15,8 @@ function publicUrl(value) {
   const url = new URL(value);
   if (url.protocol !== "https:" || !allowedHosts.has(url.hostname) ||
       url.username || url.password || url.port ||
-      (url.hostname === "news.microsoft.com" && url.pathname !== "/events/ignite/2026/book-of-news/")) {
+      (url.hostname === "news.microsoft.com" && url.pathname !== "/events/ignite/2026/book-of-news/") ||
+      (url.hostname === "cdn-dynmedia-1.microsoft.com" && url.href !== publicDocumentUrl)) {
     throw new Error("The snapshot contains an unapproved source URL.");
   }
   return url.href;

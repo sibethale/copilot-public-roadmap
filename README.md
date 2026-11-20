@@ -11,11 +11,16 @@ The site publishes public-source records, not an export of an internal list:
   from Microsoft's anonymous public roadmap API.
 - The existing blog feed is deduplicated by article. Titles come from the public article,
   not private notes or edited list titles.
-- The **Ignite 2026** filter adds 98 individual, reviewed announcements alongside
+- The **Ignite 2026** filter adds 99 individual, reviewed announcements alongside
   the source-level feed. Concise factual titles are verified against the public
-  Book of News, product blogs, public roadmap, or labelled Message Center
+  Book of News, product blogs, public roadmap, Copilot Credits Guide (PDF), or labelled Message Center
   mirrors. Multiple announcements can share a source; they are not duplicate
   article records. Open `?source=Ignite` to link directly to this view.
+- The AI Flex Plan entry is supported by the November 2026 Copilot Credits Guide,
+  PDF page 4 (printed page 3). The browser permits only that exact public PDF URL
+  on Microsoft's CDN, not arbitrary files on the same host. Its publication date
+  uses the guide's stated month; no exact publication day is inferred from file
+  metadata. The PDF itself is linked, not republished.
 - Message Center entries come only from anonymously accessible pages on
   MS Message Center, an independent third-party mirror. The mirror is not the
   Microsoft 365 admin center and is labelled accordingly.

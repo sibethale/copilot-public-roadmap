@@ -3865,6 +3865,22 @@
       "release": "",
       "published": "2026-11-18",
       "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-b95954b57dd87b4a",
+      "title": "AI Flex Plan: one monetary commitment for Copilot Credits and eligible Microsoft AI consumption",
+      "type": "Ignite",
+      "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/ai/CopilotCreditsGuide.pdf",
+      "publisher": "Microsoft Copilot Credits Guide (PDF)",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot",
+        "Microsoft Foundry"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11",
+      "verifiedOn": "2026-11-20"
     }
   ]
 }
