@@ -37,11 +37,17 @@ function dateLabel(value) {
 }
 
 function card(item) {
-  const article = element("article", "card");
+  const article = element("article", item.type === "Ignite" ? "card card-ignite" : "card");
   const top = element("div", "card-top");
   top.append(element("span", "kind", item.type === "Ignite" ? "Ignite 2026" : item.type),
     element("span", "reference", item.reference));
-  article.append(top, element("h3", "", item.title));
+  const title = element("h3");
+  const titleLink = element("a", "title-link", item.title);
+  titleLink.href = publicUrl(item.url);
+  titleLink.target = "_blank";
+  titleLink.rel = "noopener noreferrer";
+  title.append(titleLink);
+  article.append(top, title);
   const tags = element("div", "tags");
   item.products.forEach((product) => tags.append(element("span", "tag", product)));
   if (item.status) tags.append(element("span", "tag", item.status));
@@ -79,11 +85,42 @@ function render() {
   byId("results").replaceChildren(...items.map(card));
   byId("empty").hidden = items.length > 0;
   byId("result-count").textContent = `${items.length} of ${state.items.length} updates`;
+  byId("results-heading").textContent = {
+    "": "All updates", Roadmap: "Roadmap features", Blog: "Public blogs",
+    "Message Center": "Message Center updates", Ignite: "Ignite 2026 announcements",
+  }[state.type];
   document.querySelectorAll(".tab").forEach((tab) => {
     const active = tab.dataset.type === state.type;
     tab.classList.toggle("active", active);
     tab.setAttribute("aria-pressed", String(active));
   });
+  document.querySelectorAll(".product-chip").forEach((chip) => {
+    const active = chip.dataset.product === product;
+    chip.classList.toggle("active", active);
+    chip.setAttribute("aria-pressed", String(active));
+  });
+}
+
+function selectSource(type) {
+  state.type = type;
+  const url = new URL(location.href);
+  if (state.type) url.searchParams.set("source", state.type);
+  else url.searchParams.delete("source");
+  history.replaceState(null, "", url);
+  render();
+}
+
+function productChip(product, count) {
+  const chip = element("button", "product-chip", product || "All products");
+  chip.type = "button";
+  chip.dataset.product = product;
+  chip.setAttribute("aria-pressed", "false");
+  chip.append(element("span", "", String(count)));
+  chip.addEventListener("click", () => {
+    byId("product").value = product;
+    render();
+  });
+  return chip;
 }
 
 async function load() {
@@ -104,16 +141,19 @@ async function load() {
     });
     state.items = data.items;
     byId("snapshot-date").textContent = dateLabel(data.snapshotDate);
-    byId("total-count").textContent = state.items.length;
-    byId("ignite-count").textContent = `(${state.items.filter((item) => item.type === "Ignite").length})`;
-    [["roadmap-count", "Roadmap"], ["blog-count", "Blog"], ["message-count", "Message Center"]]
-      .forEach(([id, type]) => { byId(id).textContent = state.items.filter((x) => x.type === type).length; });
+    document.querySelectorAll("[data-count]").forEach((node) => {
+      node.textContent = String(state.items.filter((item) =>
+        !node.dataset.count || item.type === node.dataset.count).length);
+    });
+    byId("product-chips").append(productChip("", state.items.length));
     [...new Set(state.items.flatMap((item) => item.products))].sort().forEach((product) => {
       const option = element("option", "", product);
       option.value = product;
       byId("product").append(option);
+      byId("product-chips").append(productChip(product,
+        state.items.filter((item) => item.products.includes(product)).length));
     });
-    document.querySelectorAll("input, select, .tab").forEach((control) => { control.disabled = false; });
+    document.querySelectorAll("input, select, .tab, .ignite-action").forEach((control) => { control.disabled = false; });
     render();
   } catch (error) {
     console.error("Public roadmap could not be displayed:", error);
@@ -128,13 +168,9 @@ async function load() {
 byId("search").addEventListener("input", render);
 ["product", "sort"].forEach((id) => byId(id).addEventListener("change", render));
 document.querySelectorAll(".tab").forEach((tab) => tab.addEventListener("click", () => {
-  state.type = tab.dataset.type;
-  const url = new URL(location.href);
-  if (state.type) url.searchParams.set("source", state.type);
-  else url.searchParams.delete("source");
-  history.replaceState(null, "", url);
-  render();
+  selectSource(tab.dataset.type);
 }));
+byId("explore-ignite").addEventListener("click", () => selectSource("Ignite"));
 byId("reset").addEventListener("click", () => {
   state.type = "";
   byId("search").value = "";

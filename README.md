@@ -60,5 +60,14 @@ its linked page is accessible; use a more precise public citation where needed.
 ## Site
 
 Static HTML, CSS, and JavaScript, with no external packages, analytics, remote
-fonts, build pipeline, or authentication. Search, product filters, source tabs,
-and sorting all run locally in the browser over the reviewed public snapshot.
+fonts, build pipeline, or authentication. Search, product filters, source
+navigation, and sorting all run locally over the reviewed public snapshot.
+
+The compact application layout uses source navigation, product pills, and an
+Ignite section. Counts come from the public snapshot, not an internal service.
+On smaller screens, source navigation wraps above the page and a product
+selector replaces the pills. Light/dark system preferences and the existing
+`clawpilotTheme=light` or `clawpilotTheme=dark` override remain supported.
+See `PRODUCT.md` for the publication constraints and `DESIGN.md` for the visual
+and interaction rules. No reference-app screenshots, fonts, or private assets
+are distributed with this site.

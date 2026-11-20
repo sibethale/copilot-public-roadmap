@@ -120,7 +120,7 @@ test("the complete reviewed Ignite set includes individual Book of News announce
 
 test("static site contains no credentials, raw exports, trackers or unsafe rendering", () => {
   const files = readdirSync(root).filter((name) => name !== ".git").sort();
-  assert.deepEqual(files, [".nojekyll", "README.md", "app.js", "data.json", "index.html", "styles.css", "tests"]);
+  assert.deepEqual(files, [".nojekyll", "DESIGN.md", "PRODUCT.md", "README.md", "app.js", "data.json", "index.html", "styles.css", "tests"]);
   const html = readFileSync(new URL("index.html", root), "utf8");
   const js = readFileSync(new URL("app.js", root), "utf8");
   assert.doesNotMatch(html + js, /innerHTML|outerHTML|document\.write|eval\(|googletagmanager|google-analytics|access_token|client_secret|gh[pousr]_/);

@@ -21,63 +21,79 @@
 <body>
   <a class="skip" href="#results">Skip to updates</a>
   <header class="masthead">
-    <a class="wordmark" href="./" aria-label="Public roadmap home"><span class="mark" aria-hidden="true">C/</span> THE PUBLIC SIGNAL</a>
+    <a class="wordmark" href="./" aria-label="Public roadmap home"><span class="mark" aria-hidden="true">C/</span> Copilot &amp; agents</a>
+    <span class="header-context">Public roadmap</span>
     <a class="repo-link" href="https://github.com/sibethale/copilot-public-roadmap" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">&nearr;</span></a>
   </header>
+  <aside class="sidebar" aria-label="Update navigation">
+    <div>
+      <h2 class="sidebar-heading">Browse updates</h2>
+      <div class="tabs" role="group" aria-label="Filter by source or event">
+        <button type="button" class="tab active" data-type="" aria-pressed="true" disabled><span>All updates</span><span id="total-count" class="nav-count" data-count="">&mdash;</span></button>
+        <button type="button" class="tab" data-type="Roadmap" aria-pressed="false" disabled><span>Roadmap</span><span id="roadmap-count" class="nav-count" data-count="Roadmap">&mdash;</span></button>
+        <button type="button" class="tab" data-type="Blog" aria-pressed="false" disabled><span>Public blogs</span><span id="blog-count" class="nav-count" data-count="Blog">&mdash;</span></button>
+        <button type="button" class="tab" data-type="Message Center" aria-pressed="false" disabled><span>Message Center</span><span id="message-count" class="nav-count" data-count="Message Center">&mdash;</span></button>
+        <button type="button" class="tab" data-type="Ignite" aria-pressed="false" disabled><span>Ignite 2026</span><span id="ignite-count" class="nav-count" data-count="Ignite">&mdash;</span></button>
+      </div>
+    </div>
+    <div class="sidebar-meta">
+      <p>Snapshot reviewed <strong id="snapshot-date">Loading...</strong></p>
+      <p class="sidebar-note">Refreshed on request, not a live feed. Release plans can change.</p>
+      <a href="data.json">Open public data <span aria-hidden="true">&nearr;</span></a>
+    </div>
+  </aside>
   <main>
     <section class="intro" aria-labelledby="page-title">
-      <div>
-        <p class="eyebrow">MICROSOFT COPILOT + AGENTS</p>
-        <h1 id="page-title">What is next.<br><span>What is public.</span></h1>
-        <p class="lede">A curated view of public roadmap features, product announcements, and Message Center updates. Follow the source for the full story.</p>
+      <div class="page-icon" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m16 4 3.2 8.8L28 16l-8.8 3.2L16 28l-3.2-8.8L4 16l8.8-3.2Z"/><path d="M25 3v6M22 6h6"/></svg>
       </div>
-      <aside class="snapshot">
-        <span class="snapshot-label"><span class="dot" aria-hidden="true"></span> REVIEWED SNAPSHOT</span>
-        <strong id="snapshot-date">Loading snapshot</strong>
-        <p>Refreshed on request, not a live feed.<br>Release plans can change.</p>
-      </aside>
-    </section>
-    <section class="stats" aria-label="Snapshot overview">
-      <div><strong id="total-count">&mdash;</strong><span>public updates</span></div>
-      <div><strong id="roadmap-count">&mdash;</strong><span>roadmap features</span></div>
-      <div><strong id="blog-count">&mdash;</strong><span>public articles</span></div>
-      <div><strong id="message-count">&mdash;</strong><span>Message Center mirrors</span></div>
-    </section>
-    <section class="explorer" aria-label="Explore updates">
-      <div class="explorer-heading"><h2>Explore the signal</h2><p>No sign-in. No private content.</p></div>
-      <div class="toolbar">
-        <label class="search-label" for="search">Search updates
-          <input id="search" type="search" placeholder="Search a feature, product, or roadmap ID" autocomplete="off" disabled>
-        </label>
-        <label for="product">Product
-          <select id="product" disabled><option value="">All products</option></select>
-        </label>
-        <label for="sort">Sort by
-          <select id="sort" disabled><option value="recent">Newest first</option><option value="title">Title A&ndash;Z</option><option value="source">Source type</option></select>
-        </label>
+      <div class="intro-copy">
+        <h1 id="page-title">Copilot updates</h1>
+        <p class="lede">Public roadmap features, product announcements, and Message Center updates.</p>
       </div>
-      <div class="filter-row">
-        <div class="tabs" role="group" aria-label="Filter by source or event">
-          <button type="button" class="tab active" data-type="" aria-pressed="true" disabled>All updates</button>
-          <button type="button" class="tab" data-type="Roadmap" aria-pressed="false" disabled>Roadmap</button>
-          <button type="button" class="tab" data-type="Blog" aria-pressed="false" disabled>Blogs</button>
-          <button type="button" class="tab" data-type="Message Center" aria-pressed="false" disabled>Message Center</button>
-          <button type="button" class="tab" data-type="Ignite" aria-pressed="false" disabled>Ignite 2026 <span id="ignite-count"></span></button>
-        </div>
-        <p id="result-count" role="status" aria-live="polite">Loading public updates...</p>
-      </div>
-      <div id="error" class="notice error" role="alert" hidden></div>
-      <div id="results" class="cards" tabindex="-1"></div>
-      <div id="empty" class="empty" hidden><h3>No matching updates</h3><p>Try a different search or product filter.</p><button id="reset" type="button">Clear filters</button></div>
-      <noscript><p class="notice">JavaScript is required for filtering this snapshot. You can also <a href="data.json">read the public data directly</a>.</p></noscript>
+      <span class="public-badge"><strong data-count="">&mdash;</strong> public updates</span>
     </section>
     <details class="policy">
-      <summary>What is included &mdash; and what is not</summary>
+      <summary><span>About this public snapshot</span><span class="policy-hint">What is included, and how it is reviewed</span></summary>
       <p>Only information retrieved from anonymously accessible public sources is published. Microsoft roadmap features use Microsoft's public roadmap API. Blog entries are grouped by public article, not by private annotations.</p>
       <p>The <strong>Ignite 2026</strong> filter adds individual announcements verified against Microsoft's public Book of News, product blogs, public roadmap, and labelled Message Center mirrors. Several announcements may share a source. These event details sit alongside the existing source-level feed.</p>
       <p>Message Center links point to <strong>MS Message Center, an independent third-party mirror</strong>, not the authenticated Microsoft 365 admin center. Mirror content may lag or differ from the original announcement.</p>
       <p>No NDA material, internal notes, customer details, assignees, private links, credentials, or tenant-specific messages are included. Unverified or unavailable sources are omitted. Roadmap estimates are not commitments; consult the linked source for current details.</p>
     </details>
+    <section class="explorer" aria-label="Explore updates">
+      <div class="filter-panel">
+        <div class="product-picker">
+          <div id="product-chips" class="product-chips" role="group" aria-label="Filter by product"></div>
+        </div>
+        <div class="toolbar">
+          <label class="search-label" for="search">Search
+            <input id="search" type="search" placeholder="Search a feature, product, or roadmap ID" autocomplete="off" disabled>
+          </label>
+          <label class="product-select" for="product">Product
+            <select id="product" disabled><option value="">All products</option></select>
+          </label>
+          <label for="sort">Sort by
+            <select id="sort" disabled><option value="recent">Newest first</option><option value="title">Title A&ndash;Z</option><option value="source">Source type</option></select>
+          </label>
+        </div>
+      </div>
+      <section class="ignite-banner" aria-labelledby="ignite-heading">
+        <span class="event-icon" aria-hidden="true">&#10022;</span>
+        <div>
+          <h2 id="ignite-heading">Ignite 2026 updates</h2>
+          <p><strong data-count="Ignite">&mdash;</strong> public announcements, individually reviewed and linked to their sources.</p>
+        </div>
+        <button type="button" id="explore-ignite" class="ignite-action" disabled>Explore announcements <span aria-hidden="true">&rarr;</span></button>
+      </section>
+      <div class="explorer-heading">
+        <h2 id="results-heading">All updates</h2>
+        <p id="result-count" role="status" aria-live="polite">Loading public updates...</p>
+      </div>
+      <div id="error" class="notice error" role="alert" hidden></div>
+      <div id="results" class="cards" tabindex="-1" aria-labelledby="results-heading"></div>
+      <div id="empty" class="empty" hidden><h3>No matching updates</h3><p>Try a different search or product filter.</p><button id="reset" type="button">Clear filters</button></div>
+      <noscript><p class="notice">JavaScript is required for filtering this snapshot. You can also <a href="data.json">read the public data directly</a>.</p></noscript>
+    </section>
   </main>
   <footer><span>Curated independently. Not an official Microsoft publication.</span><a href="data.json">Public snapshot data <span aria-hidden="true">&nearr;</span></a></footer>
 </body>
