@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A curated, public-source snapshot of Microsoft Copilot and agent announcements, roadmap features, and Message Center updates.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-J58UBalZcJHrtIwJrzd4avduyvlO5Zl3lnhrswQfM/o='; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Copilot &amp; agents | Public roadmap</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext x='6' y='46' font-size='44'%3EC/%3C/text%3E%3C/svg%3E">
+  <script>
+    (() => {
+      const param = new URLSearchParams(window.location.search).get("clawpilotTheme");
+      const theme =
+        param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#results">Skip to updates</a>
+  <header class="masthead">
+    <a class="wordmark" href="./" aria-label="Public roadmap home"><span class="mark" aria-hidden="true">C/</span> THE PUBLIC SIGNAL</a>
+    <a class="repo-link" href="https://github.com/elilas_microsoft/copilot-public-roadmap" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">&nearr;</span></a>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">MICROSOFT COPILOT + AGENTS</p>
+        <h1 id="page-title">What is next.<br><span>What is public.</span></h1>
+        <p class="lede">A curated view of public roadmap features, product announcements, and Message Center updates. Follow the source for the full story.</p>
+      </div>
+      <aside class="snapshot">
+        <span class="snapshot-label"><span class="dot" aria-hidden="true"></span> REVIEWED SNAPSHOT</span>
+        <strong id="snapshot-date">Loading snapshot</strong>
+        <p>Refreshed on request, not a live feed.<br>Release plans can change.</p>
+      </aside>
+    </section>
+    <section class="stats" aria-label="Snapshot overview">
+      <div><strong id="total-count">&mdash;</strong><span>public updates</span></div>
+      <div><strong id="roadmap-count">&mdash;</strong><span>roadmap features</span></div>
+      <div><strong id="blog-count">&mdash;</strong><span>public articles</span></div>
+      <div><strong id="message-count">&mdash;</strong><span>Message Center mirrors</span></div>
+    </section>
+    <section class="explorer" aria-label="Explore updates">
+      <div class="explorer-heading"><h2>Explore the signal</h2><p>No sign-in. No private content.</p></div>
+      <div class="toolbar">
+        <label class="search-label" for="search">Search updates
+          <input id="search" type="search" placeholder="Search a feature, product, or roadmap ID" autocomplete="off" disabled>
+        </label>
+        <label for="product">Product
+          <select id="product" disabled><option value="">All products</option></select>
+        </label>
+        <label for="sort">Sort by
+          <select id="sort" disabled><option value="recent">Newest first</option><option value="title">Title A&ndash;Z</option><option value="source">Source type</option></select>
+        </label>
+      </div>
+      <div class="filter-row">
+        <div class="tabs" role="group" aria-label="Filter by source">
+          <button type="button" class="tab active" data-type="" aria-pressed="true" disabled>All updates</button>
+          <button type="button" class="tab" data-type="Roadmap" aria-pressed="false" disabled>Roadmap</button>
+          <button type="button" class="tab" data-type="Blog" aria-pressed="false" disabled>Blogs</button>
+          <button type="button" class="tab" data-type="Message Center" aria-pressed="false" disabled>Message Center</button>
+        </div>
+        <p id="result-count" role="status" aria-live="polite">Loading public updates...</p>
+      </div>
+      <div id="error" class="notice error" role="alert" hidden></div>
+      <div id="results" class="cards" tabindex="-1"></div>
+      <div id="empty" class="empty" hidden><h3>No matching updates</h3><p>Try a different search or product filter.</p><button id="reset" type="button">Clear filters</button></div>
+      <noscript><p class="notice">JavaScript is required for filtering this snapshot. You can also <a href="data.json">read the public data directly</a>.</p></noscript>
+    </section>
+    <details class="policy">
+      <summary>What is included &mdash; and what is not</summary>
+      <p>Only information retrieved from anonymously accessible public sources is published. Microsoft roadmap features use Microsoft's public roadmap API. Blog entries are grouped by public article, not by private annotations.</p>
+      <p>Message Center links point to <strong>MS Message Center, an independent third-party mirror</strong>, not the authenticated Microsoft 365 admin center. Mirror content may lag or differ from the original announcement.</p>
+      <p>No NDA material, internal notes, customer details, assignees, private links, credentials, or tenant-specific messages are included. Unverified or unavailable sources are omitted. Roadmap estimates are not commitments; consult the linked source for current details.</p>
+    </details>
+  </main>
+  <footer><span>Curated independently. Not an official Microsoft publication.</span><a href="data.json">Public snapshot data <span aria-hidden="true">&nearr;</span></a></footer>
+</body>
+</html>

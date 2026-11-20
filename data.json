@@ -1,0 +1,2383 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-20",
+  "items": [
+    {
+      "id": "6bfac090b9a6e082",
+      "title": "Agents that are persistent | New in Copilot Studio, October 2026",
+      "type": "Blog",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/new-and-improved-agents-that-are-persistent-agents-for-customer-conversations-and-improved-maker-experience-in-microsoft-copilot-studio/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-04",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "44aa7e87a5ee3b03",
+      "title": "Autopilot: meet your trusted personal teammate",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/autopilot-meet-your-trusted-personal-teammate/4572611",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "c377e7fb9b9e0a46",
+      "title": "Available today: Anthropic Claude Fable 5.1 in Microsoft Copilot",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-anthropic-claude-fable-5-1-in-microsoft-copilot/4551974",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "807fa2509995d047",
+      "title": "Available today: Anthropic Claude Fable 5.2 in Microsoft Copilot",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-anthropic-claude-fable-5-2-in-microsoft-copilot/4571829",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ade2d9339f7165a7",
+      "title": "Available today: Anthropic Claude Opus 5 in Microsoft 365 Copilot",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-anthropic-claude-opus-5-in-microsoft-365-copilot/4540524",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "bfde4aef41f2897e",
+      "title": "Available today: Anthropic\u2019s Claude Sonnet 5 in Microsoft 365 Copilot",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-anthropic%E2%80%99s-claude-sonnet-5-in-microsoft-365-copilot/4532188",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "15701353a6d35f11",
+      "title": "Available today: OpenAI GPT-6 Astra in Microsoft Copilot",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openai-gpt-6-astra-in-microsoft-copilot/4552808",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "eb14910794a393bb",
+      "title": "Available today: OpenAI's GPT-6.1 Sol and Claude Sonnet 5.5 in Microsoft Copilot",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-1-sol-and-claude-sonnet-5-5-in-microsoft-copilot/4560801",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "a0a79a4ab77993be",
+      "title": "Available today: OpenAI\u2019s GPT-5.6 in Microsoft 365 Copilot",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openai%E2%80%99s-gpt-5-6-in-microsoft-365-copilot/4533152",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "48cdf436f6da82c5",
+      "title": "Build and manage business processes with Microsoft Copilot Studio",
+      "type": "Blog",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/build-and-manage-business-processes-with-microsoft-copilot-studio/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ab36e41d8377bce2",
+      "title": "Build apps, workflows, and agents together | New in Copilot Studio, September 2026",
+      "type": "Blog",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/new-and-improved-build-apps-extend-agents-and-transform-business-processes-in-microsoft-copilot-studio/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-07",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "5dd8e9081967ac29",
+      "title": "Build business apps with Copilot Cowork and Copilot Studio",
+      "type": "Blog",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/build-apps-in-copilot-cowork-and-copilot-studio/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Copilot Studio",
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-09-10",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "519984ebe0ed8f4b",
+      "title": "Business Applications in Work IQ is now generally available",
+      "type": "Blog",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/11/18/business-applications-work-iq-generally-available/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Work IQ"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "00e813cc9ffe0f4b",
+      "title": "Co-create documents with Copilot in Word for iPad",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/co-create-documents-with-copilot-in-word-for-ipad/4534191",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Word"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "a68f19ea2af6cf31",
+      "title": "Co-create slides with Copilot in PowerPoint for iPad",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/co-create-slides-with-copilot-in-powerpoint-for-ipad/4546240",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "PowerPoint"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "9715dd3fd23325cc",
+      "title": "Copilot Code: Make the power of coding accessible to everyone",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/copilot-code-make-the-power-of-coding-accessible-to-everyone/4562358",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "888163d23438cf07",
+      "title": "Copilot that understands your organization: Introducing people and org context in Work IQ",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/copilot-that-understands-your-organization-introducing-people-and-org-context-in/4573356",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Work IQ"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "72bcfe4da6110331",
+      "title": "Delegate shared business processes to agents that are more persistent and proactive",
+      "type": "Blog",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/delegate-shared-business-processes-to-agents-that-are-more-persistent-and-proactive-with-microsoft-copilot-studio/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-15",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "5416805ff1944ffa",
+      "title": "Dynamics 365 ERP with Work IQ and business skills",
+      "type": "Blog",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/11/19/unlock-new-possibilities-for-dynamics-365-erp-with-work-iq-and-business-skills/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Work IQ",
+        "Dynamics 365"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-19",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "1747ced63008165f",
+      "title": "Evolution of the Copilot pricing model",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/evolution-of-the-copilot-pricing-model/4559416",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "3f226234f7d9e185",
+      "title": "Expanding model choice in Copilot with Grok",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/expanding-model-choice-in-copilot-with-grok/4555749",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "52c5207960117314",
+      "title": "Explore user feedback with Microsoft 365 Insights Agent",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/explore-user-feedback-with-microsoft-365-insights-agent/4565981",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "b48e2e40e005bc66",
+      "title": "Extending agentic Microsoft Dynamics 365 Sales with MCP",
+      "type": "Blog",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/07/21/extending-agentic-microsoft-dynamics-365-sales-with-mcp/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Dynamics 365"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-07-21",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "9d193745436ca993",
+      "title": "Frontier expands to more Microsoft 365 public previews",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/frontier-expands-to-more-microsoft-365-public-previews/4567243",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "7091679b5eb1111d",
+      "title": "Home: Your starting place for work in the Microsoft Copilot app",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/home-your-starting-place-for-work-in-the-microsoft-copilot-app/4573945",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "41433c06c9ce98e3",
+      "title": "Introducing Microsoft Copilot for legal",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-microsoft-copilot-for-legal/4564246",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "9634ae3f006c02d9",
+      "title": "Introducing the Microsoft Copilot harness: Unlocking the potential of truly multi-model agentic work",
+      "type": "Blog",
+      "url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+      "publisher": "Official Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-28",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "f524e9886f009cfd",
+      "title": "Introducing the new Copilot with Home, Code and Autopilot",
+      "type": "Blog",
+      "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+      "publisher": "Official Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-09-25",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "d7db4223c542aa65",
+      "title": "Learning Agent: Build AI and Copilot skills through everyday work",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/learning-agent-build-ai-and-copilot-skills-through-everyday-work/4573000",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "c9c45c5e99a8e502",
+      "title": "Measuring the value of Cowork: From AI interactions to completed work",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/measuring-the-value-of-cowork-from-ai-interactions-to-completed-work/4554464",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "231b9228e8165dd1",
+      "title": "Microsoft Contact Center Intelligence now Generally Available",
+      "type": "Blog",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/11/18/microsoft-contact-center-intelligence-now-generally-available-transform-customer-interactions/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "5b248d62d93ae729",
+      "title": "Microsoft Copilot Connectors Update: October 2026",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/microsoft-copilot-connectors-update-october-2026/4572240",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "9b3eae4c8da0ee22",
+      "title": "Microsoft Ignite 2026: Introducing Dynamics 365 in Copilot",
+      "type": "Blog",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/11/17/microsoft-ignite-2026-introducing-dynamics-365-in-copilot/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Dynamics 365"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "d43ee6648d9a1a50",
+      "title": "More Models, One Copilot",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/more-models-one-copilot/4559035",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "466eb8e4aea84293",
+      "title": "More control over web grounding with Domain Exclusion for Microsoft 365 Copilot",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/more-control-over-web-grounding-with-domain-exclusion-for-microsoft-365-copilot/4540151",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "d33fd6a027f93f0a",
+      "title": "Office at Ignite 2026: From apps to agentic system of work",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/office-at-ignite-2026-from-apps-to-agentic-system-of-work/4572226",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "c7a896e6b46084c7",
+      "title": "Plugins at Microsoft Ignite 2026",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/plugins-at-microsoft-ignite-2026/4569951",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ea2ee10992e9f92d",
+      "title": "The End of Starting Over: How Work IQ helps Copilot understand you and your work",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/the-end-of-starting-over-how-work-iq-helps-copilot-understand-you-and-your-work/4571169",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Work IQ"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "2570f42f169f4425",
+      "title": "The platform approach to becoming Frontier",
+      "type": "Blog",
+      "url": "https://blogs.microsoft.com/blog/2026/10/27/the-platform-approach-to-becoming-frontier/",
+      "publisher": "Official Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-27",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "f97fdceb43302039",
+      "title": "Transform your storytelling with interactive slides in PowerPoint",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/transform-your-storytelling-with-interactive-slides-in-powerpoint/4564287",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "PowerPoint"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "5787d540136a209a",
+      "title": "What's New in Microsoft Teams | August - September 2026",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/whats-new-in-microsoft-teams--august---september-2026/4556438",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Teams"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "62835d27b1ea35a7",
+      "title": "What's New in Notebooks | October 2026",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-notebooks--october-2026/4559105",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "3acbe7435a5dcf3d",
+      "title": "What's new in Copilot Cowork at Ignite 2026",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-copilot-cowork-at-ignite-2026/4572242",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "5465f55e135683a4",
+      "title": "What's new in Copilot Studio, August 2026: GitHub Copilot harness",
+      "type": "Blog",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/new-and-improved-github-copilot-harness-agent-skills-and-richer-context/",
+      "publisher": "Microsoft Blog",
+      "reference": "",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-09-02",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "a17635407f0d60fa",
+      "title": "What\u2019s New in Cowork: Expanded plugins and role-based skills",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-cowork-expanded-plugins-and-role-based-skills/4566221",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "0d36fe01b294d0a8",
+      "title": "What\u2019s New in Microsoft 365 Copilot | July 2026",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-365-copilot--july-2026/4538332",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "091b80324d94d485",
+      "title": "What\u2019s New in Microsoft Copilot | August 2026",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--august-2026/4551960",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "b63f74d8a07102b3",
+      "title": "What\u2019s New in Microsoft Copilot | October 2026",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--october-2026/4568528",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "2fa550d9e421e17a",
+      "title": "What\u2019s New in Microsoft Copilot | September 2026",
+      "type": "Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--september-2026/4559107",
+      "publisher": "Microsoft Community Hub",
+      "reference": "",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "e517ef8793f229ef",
+      "title": "MC1239927: Microsoft Teams: Consecutive interpretation in Interpreter agent will be generally available",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1239927/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1239927",
+      "products": [
+        "Teams"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-02-26",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ced918caea1de8aa",
+      "title": "MC1411088: Copilot Studio - Define custom metrics for analytics",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1411088/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1411088",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-07-01",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "6d5fa59e7ea35a61",
+      "title": "MC1421500: Copilot Studio - Enforce safe sharing by detecting credential oversharing",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1421500/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1421500",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-07-09",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "1446e55065c6cd83",
+      "title": "MC1421919: Web content setting in Microsoft 365 Copilot expands across Copilot experiences and moves to Settings",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1421919/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1421919",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-07-09",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ba4e0f9ee8919187",
+      "title": "MC1423116: Microsoft Outlook for iOS and Android: Clearer Copilot availability in multi-account experiences",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1423116/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1423116",
+      "products": [
+        "Outlook"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-07-10",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "eb3ae3c312ffefa8",
+      "title": "MC1426714: Microsoft Viva: Create and customize Power BI reports",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1426714/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1426714",
+      "products": [
+        "Viva"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-07-13",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "12298166b740e909",
+      "title": "MC1428562: Copilot Studio - Share autonomous agents to end users",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1428562/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1428562",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-07-15",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "e46dbab617860cf6",
+      "title": "MC1430543: Microsoft Excel: Summarize text columns and generate categories with Copilot",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1430543/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1430543",
+      "products": [
+        "Excel"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-07-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "dab31aa917021b28",
+      "title": "MC1434583: Microsoft 365 Copilot: Configure organization policy link for blocked Copilot Chat users",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1434583/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1434583",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-07-20",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "7333ffebeda4a73d",
+      "title": "MC1442232: Sales in Microsoft 365 Copilot - Configure Sales agent starter prompts across applications",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1442232/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1442232",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-07-29",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "cf7150d2275550d4",
+      "title": "MC1442234: Microsoft Copilot Studio - New workflows designer",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1442234/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1442234",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-07-29",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "0a4b05a13dd44e74",
+      "title": "MC1442612: Microsoft PowerPoint: Access your organization's brand templates in PowerPoint",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1442612/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1442612",
+      "products": [
+        "PowerPoint"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-07-29",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "946aecf8a2feecdf",
+      "title": "MC1446172: Copilot Studio - Block the use of maker-provided credentials for authentication",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1446172/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1446172",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-08-03",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "4f3e346ad63731a2",
+      "title": "MC1447677: Microsoft 365 Copilot: Unified management experience for connectors in the Microsoft 365 admin center",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1447677/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1447677",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-08-05",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "75f82620b71dfa6a",
+      "title": "MC1450135: Viva Learning: Copilot experience transitions to Learning Agent in Microsoft 365 Copilot",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1450135/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1450135",
+      "products": [
+        "Viva"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-08-07",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "cbb03a335be48792",
+      "title": "MC1454108: Microsoft 365 Copilot app update: Simpler Copilot access",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1454108/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1454108",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-08-13",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "416f4c0121153049",
+      "title": "MC1454377: Agent Builder capabilities update",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1454377/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1454377",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-08-13",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "cd534aecde6605a3",
+      "title": "MC1454393: Microsoft 365 Copilot: Updates to Copilot Tuning and transition to Microsoft Copilot Studio",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1454393/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1454393",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-08-14",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "7727363bbcdf3f84",
+      "title": "MC1455015: Copilot in Excel - Power BI Grounding",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1455015/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1455015",
+      "products": [
+        "Excel"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-08-14",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "43ff812d6253e0b9",
+      "title": "MC1465301: Microsoft Copilot Studio \u2013 Securely connect with Entra-based user and S2S authentication",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1465301/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1465301",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-09-01",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "875efd09d7e8c82d",
+      "title": "MC1470425: Microsoft Copilot Cost Management: September Updates",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1470425/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1470425",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-09-10",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "c26d5822fa9a9bfc",
+      "title": "MC1470885: M365 Copilot: Tell Copilot what you need directly from the Copilot button in Word, Excel, and PowerPoint",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1470885/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1470885",
+      "products": [
+        "PowerPoint",
+        "Excel",
+        "Word"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-09-11",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "a6dd3b4f9c8cd0ba",
+      "title": "MC1471573: Copilot Studio - Use MCP-compliant tools in agent workflows",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1471573/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1471573",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-09-14",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "6b7426704ed001df",
+      "title": "MC1472007: Manage who can upload advanced agents and plugins",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1472007/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1472007",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-09-14",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "93552a712c305f5a",
+      "title": "MC1474461: Browser Use Admin Control for Copilot Cowork",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1474461/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1474461",
+      "products": [
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-09-19",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ebbeddc3c247473b",
+      "title": "MC1479277: Microsoft Copilot: New ways to work across Microsoft Copilot and Microsoft 365",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1479277/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1479277",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-09-25",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "8670f52639865a8e",
+      "title": "MC1486291: Microsoft 365 Copilot: new guided Copilot onboarding experience",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1486291/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1486291",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-02",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "895fa6da86cbd5ce",
+      "title": "MC1492154: Enhanced M365 Copilot Memory - Copilot is now personalized with work data",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1492154/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1492154",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-08",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "0926b6720ae6305b",
+      "title": "MC1492161: Microsoft 365 Copilot in PowerPoint: 'Clarify my thinking' skill for desktop",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1492161/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1492161",
+      "products": [
+        "PowerPoint"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-08",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "16083ad7b54e6872",
+      "title": "MC1519122: Microsoft Copilot: UBB models in Chat and Word, Excel, and PowerPoint via the model selector",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1519122/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1519122",
+      "products": [
+        "PowerPoint",
+        "Excel",
+        "Word"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-21",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "a9593a98445ba9f3",
+      "title": "MC1519871: Copilot Code is rolling out in Frontier",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1519871/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1519871",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-21",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "400d57f160ccf253",
+      "title": "MC1521609: Create sales pitches with Copilot in PowerPoint",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1521609/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1521609",
+      "products": [
+        "PowerPoint"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-22",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "7e4feac86b90dd2b",
+      "title": "MC1528003: Microsoft Excel: Edit with Copilot in Excel on iPhone",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1528003/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1528003",
+      "products": [
+        "Excel"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-27",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ffc8ed7273c96069",
+      "title": "MC1529476: Microsoft PowerPoint: Draft proposal response Copilot skill",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1529476/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1529476",
+      "products": [
+        "PowerPoint"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-28",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "1f9689addac0bc89",
+      "title": "MC1529477: Microsoft PowerPoint: Review sales pipeline Copilot skill",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1529477/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1529477",
+      "products": [
+        "PowerPoint"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-28",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "a4850c7e8cb750f0",
+      "title": "MC1529480: Microsoft PowerPoint: Prepare customer review deck Copilot skill",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1529480/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1529480",
+      "products": [
+        "PowerPoint"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-28",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "b15ad1b7354418f1",
+      "title": "MC1529481: Microsoft PowerPoint: Prepare internal sales review Copilot skill",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1529481/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1529481",
+      "products": [
+        "PowerPoint"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-28",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "5f2d6a91ddb6d644",
+      "title": "MC1530595: Microsoft Copilot Feedback UX update",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1530595/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1530595",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-29",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "0a8ce04283383bef",
+      "title": "MC1530611: Office in Copilot brings the full power of Office into the Microsoft Copilot app",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1530611/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1530611",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-29",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "c951bb517c4c3742",
+      "title": "MC1530742: Copilot Studio - Task completion grader",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1530742/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1530742",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-29",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "4310dfcfa69a6ef5",
+      "title": "MC1530748: Copilot Studio - Tool accuracy grader",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1530748/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1530748",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-29",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "fffb1ca4ff543fe4",
+      "title": "MC1530954: Microsoft 365 apps: Draft mode for official Brand Kits",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1530954/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1530954",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-29",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "15c1fc6be307cf33",
+      "title": "MC1530959: Microsoft 365 Copilot Chat: View memory sources used to personalize responses",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1530959/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1530959",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-29",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "4ed526060068ab78",
+      "title": "MC1531903: Copilot Studio - Evaluation for automation flows",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1531903/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1531903",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-30",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "007ce48d4f5c9c5a",
+      "title": "MC1531924: Copilot Studio - Generated custom grader",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1531924/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1531924",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-30",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "0fa32af0581b1a0c",
+      "title": "MC1532071: Copilot Studio - Agent status evaluation warnings announcement",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1532071/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1532071",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-10-30",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "8e5eade9544595b5",
+      "title": "MC1538998: Power Platform - Copilot Studio agent metrics and alerts",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1538998/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1538998",
+      "products": [
+        "Copilot Studio"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-05",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "9e04fda4f45f5dac",
+      "title": "MC1540330: Opal (Frontier) - UBB Notification",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1540330/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1540330",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-05",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "a8bb4c2fe51a3158",
+      "title": "MC1542062: Copilot Cowork: Power Platform connectors now follow Microsoft 365 admin center settings",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1542062/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1542062",
+      "products": [
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-06",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "6c81295db6c51cb3",
+      "title": "MC1545695: App Blocks in M365 Copilot",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1545695/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1545695",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-09",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "71c8199357d46260",
+      "title": "MC1546430: 'Add explainer video' Skill in PPT Copilot",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1546430/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1546430",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-10",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "3ba9b0743c81a724",
+      "title": "MC1548004: Microsoft 365 Copilot Chat: Filter responses by content source",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1548004/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1548004",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-10",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "28b023662963ddc4",
+      "title": "MC1550533: Scheduled prompts in Microsoft 365 Copilot are moving to native Copilot scheduling and the Tasks view",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1550533/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1550533",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-12",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "5326335af2465b0a",
+      "title": "MC1552386: Microsoft 365 Copilot: Page context for open tabs in the Copilot desktop app built-in browser",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1552386/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1552386",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-13",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "0e77138d8de1b26e",
+      "title": "MC1552389: Microsoft 365 Copilot: Workforce Intelligence plugin available in Copilot Cowork",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1552389/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1552389",
+      "products": [
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-13",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "bcf7b56a74a852e6",
+      "title": "MC1556082: Microsoft 365 admin center: Unified release preferences for Standard, Deferred, and Frontier",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1556082/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1556082",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-16",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "e7ae8b034a2a5a23",
+      "title": "MC1556093: Microsoft 365 Copilot: Learning Agent introduces personalized upskilling notifications in Teams",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1556093/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1556093",
+      "products": [
+        "Teams"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-16",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "4a8068b3134000a1",
+      "title": "MC1556094: Microsoft 365 Copilot: Learning Agent introduces personalized learning experiences",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1556094/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1556094",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-16",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "2f65eb328613cab6",
+      "title": "MC1556104: Microsoft PowerPoint: Introducing plugins for Microsoft 365 Copilot",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1556104/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1556104",
+      "products": [
+        "PowerPoint"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-16",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "bb6807a4fd74c2f0",
+      "title": "MC1557727: Agent 365 Business Analytics app experience",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1557727/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1557727",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ea56973c67137ed4",
+      "title": "MC1557754: Microsoft Copilot: Continue using models after reaching usage limits with Copilot Credits",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1557754/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1557754",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "c12085cc9d20e65a",
+      "title": "MC1557759: Microsoft 365 Copilot: Use case classification for agent sessions and Copilot Cowork (Frontier public preview)",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1557759/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1557759",
+      "products": [
+        "Copilot Cowork"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "03a3382a14827bb4",
+      "title": "MC1557766: Microsoft Viva: Introducing Interactive Insights in the A365 Business Analytics app",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1557766/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1557766",
+      "products": [
+        "Viva"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "50190144c7c7c7f1",
+      "title": "MC1558020: Power Platform admin center - Reporting API for Copilot Credits (preview)",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1558020/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1558020",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "a24218cc02e4382f",
+      "title": "MC1558023: Microsoft Copilot in PowerPoint for Windows, Mac, and the web: Introducing new sales-focused skills",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1558023/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1558023",
+      "products": [
+        "PowerPoint"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "1cf0b11a93cba10b",
+      "title": "MC1558817: Dataverse - Dataverse Data Available in Agent Builder Declarative Agents",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1558817/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1558817",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "5d9ae3e59c99927e",
+      "title": "MC1559632: Copilot Workspaces: Updated workspace memory",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1559632/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1559632",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "3cca61bb90aa0d25",
+      "title": "MC1559633: Microsoft SharePoint: Agent Chat web part to bring Copilot agents into SharePoint pages",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1559633/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1559633",
+      "products": [
+        "SharePoint"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "be09ceb8b81adad4",
+      "title": "MC1559638: New capabilities in Copilot Workspaces",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1559638/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1559638",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "5ea2430c895e80dd",
+      "title": "MC1559641: New Copilot experience in OneNote",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1559641/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1559641",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "def96984f26e2eac",
+      "title": "MC1560916: Microsoft Copilot: GPT-6.2 Sol and Astra rolling out",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1560916/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1560916",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-19",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "b29bf088cfa25fd7",
+      "title": "MC1560920: Copilot video creation in Clipchamp Video Hub is now live in Frontier Public",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1560920/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1560920",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-20",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "871ef8100d0a61e9",
+      "title": "MC1560929: Updates to Workforce Insights Agent (Frontier) for Admins in Microsoft 365 Copilot",
+      "type": "Message Center",
+      "url": "https://msmessagecenter.com/MC1560929/",
+      "publisher": "MS Message Center (independent mirror)",
+      "reference": "MC1560929",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "2026-11-20",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-574364",
+      "title": "Dynamics 365 Sales: Choose the data sources AI-powered Data Enrichment uses, including CRM notes",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=574364",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "574364",
+      "products": [
+        "Dynamics 365 Sales"
+      ],
+      "status": "Rolling out",
+      "release": "2026-10",
+      "published": "2026-10-09",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-577172",
+      "title": "Microsoft 365: [Education] Assign Study and Learn in Teams and LMS Assignments",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=577172",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "577172",
+      "products": [
+        "Microsoft 365",
+        "Microsoft Teams"
+      ],
+      "status": "Rolling out",
+      "release": "2026-11",
+      "published": "2026-10-22",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-577173",
+      "title": "Microsoft 365: [Education] Provide a Copilot starter prompt in Teams and LMS Assignments",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=577173",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "577173",
+      "products": [
+        "Microsoft 365",
+        "Microsoft Teams"
+      ],
+      "status": "Rolling out",
+      "release": "2026-11",
+      "published": "2026-10-22",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-577841",
+      "title": "Microsoft Copilot (Microsoft 365): Copilot app mode handoffs",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=577841",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "577841",
+      "products": [
+        "Microsoft Copilot (Microsoft 365)"
+      ],
+      "status": "Rolling out",
+      "release": "2026-11",
+      "published": "2026-10-27",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-500872",
+      "title": "Microsoft Copilot (Microsoft 365): Export Copilot metrics in the Copilot Dashboard",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=500872",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "500872",
+      "products": [
+        "Microsoft Viva",
+        "Microsoft Copilot (Microsoft 365)"
+      ],
+      "status": "In development",
+      "release": "2026-11",
+      "published": "2025-10-16",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-494809",
+      "title": "Microsoft Copilot (Microsoft 365): Frontier and Microsoft agent user request approval flow in Microsoft 365 admin center",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=494809",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "494809",
+      "products": [
+        "Microsoft Copilot (Microsoft 365)",
+        "Microsoft 365 admin center"
+      ],
+      "status": "Launched",
+      "release": "2026-07",
+      "published": "2025-06-05",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-567005",
+      "title": "Microsoft Copilot (Microsoft 365): Insights: Copilot Analytics - Cowork adoption and impact",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=567005",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "567005",
+      "products": [
+        "Microsoft Viva",
+        "Microsoft Copilot (Microsoft 365)"
+      ],
+      "status": "Launched",
+      "release": "2026-07",
+      "published": "2026-06-30",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-567120",
+      "title": "Microsoft Copilot (Microsoft 365): Microsoft 365 admin center \u2013 New Microsoft 365 Copilot usage report for GCC High & DoD",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=567120",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "567120",
+      "products": [
+        "Microsoft Copilot (Microsoft 365)"
+      ],
+      "status": "Launched",
+      "release": "2026-07",
+      "published": "2026-07-06",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-489825",
+      "title": "Microsoft Copilot (Microsoft 365): Overview of recent comments and changes in Word",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=489825",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "489825",
+      "products": [
+        "Word",
+        "Microsoft Copilot (Microsoft 365)"
+      ],
+      "status": "Launched",
+      "release": "2026-09",
+      "published": "2025-05-13",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-516577",
+      "title": "Microsoft Copilot (Microsoft 365): Planner capabilities in Copilot chat (M365 Copilot)",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=516577",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "516577",
+      "products": [
+        "Planner",
+        "Microsoft Copilot (Microsoft 365)"
+      ],
+      "status": "Rolling out",
+      "release": "2026-09",
+      "published": "2025-11-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-564608",
+      "title": "Microsoft Copilot (Microsoft 365): Support for MCP Agents with Interactive UI Widgets in Government Clouds",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=564608",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "564608",
+      "products": [
+        "Microsoft Copilot (Microsoft 365)"
+      ],
+      "status": "Rolling out",
+      "release": "2026-08",
+      "published": "2026-05-27",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-567670",
+      "title": "Microsoft Copilot (Microsoft 365): Use Agent 365 agents within Microsoft 365 Copilot Chat and Declarative Agents",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=567670",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "567670",
+      "products": [
+        "Microsoft Copilot (Microsoft 365)"
+      ],
+      "status": "Rolling out",
+      "release": "2026-08",
+      "published": "2026-07-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-559018",
+      "title": "Microsoft Copilot (Microsoft 365): Work IQ APIs: Researcher Agent Access",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=559018",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "559018",
+      "products": [
+        "Microsoft Copilot (Microsoft 365)"
+      ],
+      "status": "In development",
+      "release": "2026-07",
+      "published": "2026-05-18",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-501111",
+      "title": "Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Users in GCC-M will able to use custom engine agents",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=501111",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "501111",
+      "products": [
+        "Microsoft Copilot (Microsoft 365)"
+      ],
+      "status": "Launched",
+      "release": "2026-08",
+      "published": "2025-09-24",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-568929",
+      "title": "Microsoft Copilot Studio: Dataverse integration on Copilot Studio",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=568929",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "568929",
+      "products": [
+        "Microsoft Copilot Studio"
+      ],
+      "status": "In development",
+      "release": "2026-09",
+      "published": "2026-08-10",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-570434",
+      "title": "Microsoft Copilot Studio: Enabling makers to require human approval for tool calls",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=570434",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "570434",
+      "products": [
+        "Microsoft Copilot Studio"
+      ],
+      "status": "In development",
+      "release": "2026-09",
+      "published": "2026-09-01",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-566998",
+      "title": "Microsoft Copilot Studio: Invoke agents as workflow steps with the agent node",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=566998",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "566998",
+      "products": [
+        "Microsoft Copilot (Microsoft 365)",
+        "Microsoft Copilot Studio"
+      ],
+      "status": "Launched",
+      "release": "2026-09",
+      "published": "2026-07-01",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-568930",
+      "title": "Microsoft Copilot Studio: SQL server Support in Microsoft Copilot Studio",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=568930",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "568930",
+      "products": [
+        "Microsoft Copilot Studio"
+      ],
+      "status": "In development",
+      "release": "2026-09",
+      "published": "2026-08-07",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-566703",
+      "title": "Microsoft Edge: Upgraded Copilot new tab page",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=566703",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "566703",
+      "products": [
+        "Microsoft Edge",
+        "Microsoft Copilot (Microsoft 365)"
+      ],
+      "status": "Launched",
+      "release": "2026-11",
+      "published": "2026-06-26",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-489822",
+      "title": "Microsoft Edge: v.144 - Contextual nudges on address bar offering help summarizing webpages.",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=489822",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "489822",
+      "products": [
+        "Microsoft Copilot (Microsoft 365)",
+        "Microsoft Edge"
+      ],
+      "status": "Launched",
+      "release": "2026-10",
+      "published": "2025-04-14",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-565870",
+      "title": "Microsoft Purview: Data Loss Prevention - Data Loss Prevention to safeguard sensitive information from external web search in Microsoft 356 Copilot and Copilot Chat",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=565870",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "565870",
+      "products": [
+        "Microsoft Purview"
+      ],
+      "status": "Launched",
+      "release": "2026-07",
+      "published": "2026-06-26",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-560700",
+      "title": "Microsoft Teams: AI-powered notes for in-person meetings with Facilitator in Teams Rooms on Android",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=560700",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "560700",
+      "products": [
+        "Microsoft Teams",
+        "Microsoft Copilot (Microsoft 365)"
+      ],
+      "status": "In development",
+      "release": "2026-11",
+      "published": "2026-04-27",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-569608",
+      "title": "Microsoft Teams: Enable agents for existing applications in your organization",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=569608",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "569608",
+      "products": [
+        "Microsoft Teams"
+      ],
+      "status": "Rolling out",
+      "release": "2026-11",
+      "published": "2026-08-28",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-565216",
+      "title": "Microsoft Teams: Intelligent call delegation",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=565216",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "565216",
+      "products": [
+        "Microsoft Teams",
+        "Microsoft Copilot (Microsoft 365)"
+      ],
+      "status": "Rolling out",
+      "release": "2026-11",
+      "published": "2026-09-30",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-500242",
+      "title": "Microsoft Teams: Intelligent recap for DoD",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=500242",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "500242",
+      "products": [
+        "Microsoft Teams"
+      ],
+      "status": "Launched",
+      "release": "2026-11",
+      "published": "2025-08-08",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-560538",
+      "title": "Microsoft Viva: Copilot Analytics - Export metrics from Agent Dashboard",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=560538",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "560538",
+      "products": [
+        "Microsoft Viva",
+        "Microsoft Copilot (Microsoft 365)"
+      ],
+      "status": "In development",
+      "release": "2026-11",
+      "published": "2026-04-21",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-561325",
+      "title": "Microsoft Viva: Copilot Analytics: Copilot usage snapshot PBI at day level with fresh data",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=561325",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "561325",
+      "products": [
+        "Microsoft Viva",
+        "Microsoft Copilot (Microsoft 365)"
+      ],
+      "status": "Launched",
+      "release": "2026-09",
+      "published": "2026-05-06",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-567320",
+      "title": "Microsoft Viva: Viva Glint - Copilot admin configuration assistance",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=567320",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "567320",
+      "products": [
+        "Microsoft Viva"
+      ],
+      "status": "Rolling out",
+      "release": "2026-09",
+      "published": "2026-08-03",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-560595",
+      "title": "Microsoft Viva: Viva Glint - Copilot assisted commenting in Glint survey taking",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=560595",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "560595",
+      "products": [
+        "Microsoft Viva"
+      ],
+      "status": "Launched",
+      "release": "2026-09",
+      "published": "2026-04-17",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-564605",
+      "title": "Outlook: Co-Authoring Highlight and Rewrite",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=564605",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "564605",
+      "products": [
+        "Outlook"
+      ],
+      "status": "Launched",
+      "release": "2026-07",
+      "published": "2026-05-26",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-561491",
+      "title": "Outlook: Copilot Settings in classic Outlook for Windows",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=561491",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "561491",
+      "products": [
+        "Outlook"
+      ],
+      "status": "Launched",
+      "release": "2026-07",
+      "published": "2026-05-06",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-567007",
+      "title": "Outlook: New Copilot entry point in Classic Outlook",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=567007",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "567007",
+      "products": [
+        "Outlook",
+        "Microsoft Copilot (Microsoft 365)"
+      ],
+      "status": "Rolling out",
+      "release": "2026-11",
+      "published": "2026-07-22",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-508524",
+      "title": "Outlook: User-initiated Copilot insights in classic Outlook",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=508524",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "508524",
+      "products": [
+        "Outlook"
+      ],
+      "status": "Rolling out",
+      "release": "2026-10",
+      "published": "2025-11-19",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-570437",
+      "title": "PowerPoint: Async Notifications for PowerPoint Agent (Windows Desktop)",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=570437",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "570437",
+      "products": [
+        "PowerPoint"
+      ],
+      "status": "In development",
+      "release": "2026-10",
+      "published": "2026-09-15",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "roadmap-569208",
+      "title": "SharePoint: HTML pages",
+      "type": "Roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=569208",
+      "publisher": "Microsoft Copilot Roadmap",
+      "reference": "569208",
+      "products": [
+        "SharePoint",
+        "Microsoft Copilot (Microsoft 365)"
+      ],
+      "status": "Rolling out",
+      "release": "2026-10",
+      "published": "2026-08-11",
+      "verifiedOn": "2026-11-20"
+    }
+  ]
+}
