@@ -71,3 +71,6 @@ selector replaces the pills. Light/dark system preferences and the existing
 See `PRODUCT.md` for the publication constraints and `DESIGN.md` for the visual
 and interaction rules. No reference-app screenshots, fonts, or private assets
 are distributed with this site.
+
+When changing CSS or JavaScript, increment the asset version in both resource
+URLs in `index.html` so the new layout cannot reuse older cached assets.
