@@ -9,6 +9,7 @@ const root = new URL("../", import.meta.url);
 const raw = readFileSync(new URL("data.json", root), "utf8");
 const data = JSON.parse(raw);
 const creditsGuideUrl = "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/ai/CopilotCreditsGuide.pdf";
+const oneNoteSessionUrl = "https://ignite.microsoft.com/en-US/sessions/1787856604402001Ec2D-1791588173232001Cx8h";
 const keys = [
   "id", "title", "type", "url", "publisher", "reference", "products", "status",
   "release", "published", "verifiedOn",
@@ -71,6 +72,11 @@ test("source types must match exact public hosts, paths and identifiers", () => 
         assert.equal(url.href, creditsGuideUrl);
         assert.equal(item.publisher, "Microsoft Copilot Credits Guide (PDF)");
         assert.equal(item.reference, "");
+      } else if (url.hostname === "ignite.microsoft.com") {
+        assert.equal(url.href, oneNoteSessionUrl);
+        assert.equal(item.publisher, "Microsoft Ignite 2026 session");
+        assert.equal(item.reference, "BRK207");
+        assert.equal(item.published, "");
       } else if (url.hostname === "msmessagecenter.com") {
         assert.match(item.reference, /^MC\d+$/);
         assert.equal(url.pathname, `/${item.reference}/`);
@@ -115,7 +121,7 @@ test("source types must match exact public hosts, paths and identifiers", () => 
 
 test("the complete reviewed Ignite set includes individual Book of News announcements", () => {
   const ignite = data.items.filter((item) => item.type === "Ignite");
-  assert.equal(ignite.length, 99);
+  assert.equal(ignite.length, 100);
   assert.equal(ignite.filter((item) => new URL(item.url).hostname === "news.microsoft.com").length, 45);
   assert.equal(ignite.filter((item) => item.title.includes("unlabeled sensitive files")).length, 1);
   assert.ok(ignite.find((item) => item.title.includes("unlabeled sensitive files")).url.includes("/microsoft-security-blog/"));
@@ -126,6 +132,17 @@ test("the complete reviewed Ignite set includes individual Book of News announce
   const html = readFileSync(new URL("index.html", root), "utf8");
   assert.ok(html.includes('data-type="Ignite"'));
   assert.ok(html.includes('id="ignite-count"'));
+});
+
+test("the public OneNote session and existing OneNote updates are discoverable by product", () => {
+  const sessions = data.items.filter((item) => item.url === oneNoteSessionUrl);
+  assert.equal(sessions.length, 1);
+  assert.equal(sessions[0].title, "Agentic productivity with new Copilot capabilities in OneNote");
+  assert.equal(sessions[0].type, "Ignite");
+  assert.equal(sessions[0].published + sessions[0].release + sessions[0].status, "");
+  const oneNoteItems = data.items.filter((item) => item.title.includes("OneNote"));
+  assert.equal(oneNoteItems.length, 4);
+  assert.ok(oneNoteItems.every((item) => item.products.includes("OneNote")));
 });
 
 test("the browser permits only the reviewed public PDF, not arbitrary CDN documents", () => {
@@ -142,6 +159,26 @@ test("the browser permits only the reviewed public PDF, not arbitrary CDN docume
     creditsGuideUrl.replace("https://", "https://user:password@"),
     creditsGuideUrl.replace(".com/", ".com:8443/"),
     creditsGuideUrl.replace(".com/", ".com.example.org/"),
+  ]) {
+    assert.throws(() => publicUrl(value), /unapproved source URL/);
+  }
+});
+
+test("the browser permits only the reviewed public Ignite session", () => {
+  const js = readFileSync(new URL("app.js", root), "utf8");
+  const publicUrl = runInNewContext(`${js.split("\nfunction element(")[0]}\npublicUrl;`, {
+    URL, URLSearchParams, location: { search: "" },
+  });
+  assert.equal(publicUrl(oneNoteSessionUrl), oneNoteSessionUrl);
+  for (const value of [
+    oneNoteSessionUrl.replace("Cx8h", "Other"),
+    "https://ignite.microsoft.com/en-US/sessions",
+    `${oneNoteSessionUrl}?source=sessions`,
+    `${oneNoteSessionUrl}#recording`,
+    oneNoteSessionUrl.replace("https:", "http:"),
+    oneNoteSessionUrl.replace("https://", "https://user:password@"),
+    oneNoteSessionUrl.replace(".com/", ".com:8443/"),
+    oneNoteSessionUrl.replace(".com/", ".com.example.org/"),
   ]) {
     assert.throws(() => publicUrl(value), /unapproved source URL/);
   }

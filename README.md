@@ -11,11 +11,17 @@ The site publishes public-source records, not an export of an internal list:
   from Microsoft's anonymous public roadmap API.
 - The existing blog feed is deduplicated by article. Titles come from the public article,
   not private notes or edited list titles.
-- The **Ignite 2026** filter adds 99 individual, reviewed announcements alongside
-  the source-level feed. Concise factual titles are verified against the public
-  Book of News, product blogs, public roadmap, Copilot Credits Guide (PDF), or labelled Message Center
-  mirrors. Multiple announcements can share a source; they are not duplicate
+- The **Ignite 2026** filter includes 100 reviewed announcements and public
+  sessions alongside the source-level feed. Concise factual titles are verified
+  against the public Book of News, product blogs, public roadmap, Copilot Credits
+  Guide (PDF), session catalog, or labelled Message Center mirrors.
+  Multiple announcements can share a source; they are not duplicate
   article records. Open `?source=Ignite` to link directly to this view.
+- The OneNote session BRK207 uses its anonymously accessible session title,
+  canonical URL, and public session code. Only this verified session URL is
+  permitted on the Ignite catalog host. No transcript, video, attendee data, or
+  private catalog fields are republished. Session dates are not treated as
+  publication or release dates, and a session listing is not a release commitment.
 - The AI Flex Plan entry is supported by the November 2026 Copilot Credits Guide,
   PDF page 4 (printed page 3). The browser permits only that exact public PDF URL
   on Microsoft's CDN, not arbitrary files on the same host. Its publication date

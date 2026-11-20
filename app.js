@@ -3,9 +3,10 @@
 const allowedHosts = new Set([
   "www.microsoft.com", "techcommunity.microsoft.com", "blogs.microsoft.com",
   "devblogs.microsoft.com", "msmessagecenter.com", "news.microsoft.com",
-  "cdn-dynmedia-1.microsoft.com",
+  "cdn-dynmedia-1.microsoft.com", "ignite.microsoft.com",
 ]);
 const publicDocumentUrl = "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/ai/CopilotCreditsGuide.pdf";
+const publicSessionUrl = "https://ignite.microsoft.com/en-US/sessions/1787856604402001Ec2D-1791588173232001Cx8h";
 const types = new Set(["Roadmap", "Blog", "Message Center", "Ignite"]);
 const requestedType = new URLSearchParams(location.search).get("source");
 const state = { items: [], type: types.has(requestedType) ? requestedType : "" };
@@ -16,7 +17,8 @@ function publicUrl(value) {
   if (url.protocol !== "https:" || !allowedHosts.has(url.hostname) ||
       url.username || url.password || url.port ||
       (url.hostname === "news.microsoft.com" && url.pathname !== "/events/ignite/2026/book-of-news/") ||
-      (url.hostname === "cdn-dynmedia-1.microsoft.com" && url.href !== publicDocumentUrl)) {
+      (url.hostname === "cdn-dynmedia-1.microsoft.com" && url.href !== publicDocumentUrl) ||
+      (url.hostname === "ignite.microsoft.com" && url.href !== publicSessionUrl)) {
     throw new Error("The snapshot contains an unapproved source URL.");
   }
   return url.href;
@@ -90,7 +92,7 @@ function render() {
   byId("result-count").textContent = `${items.length} of ${state.items.length} updates`;
   byId("results-heading").textContent = {
     "": "All updates", Roadmap: "Roadmap features", Blog: "Public blogs",
-    "Message Center": "Message Center updates", Ignite: "Ignite 2026 announcements",
+    "Message Center": "Message Center updates", Ignite: "Ignite 2026 updates",
   }[state.type];
   document.querySelectorAll(".tab").forEach((tab) => {
     const active = tab.dataset.type === state.type;

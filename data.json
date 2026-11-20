@@ -1786,7 +1786,8 @@
       "publisher": "MS Message Center (independent mirror)",
       "reference": "MC1559641",
       "products": [
-        "Microsoft Copilot"
+        "Microsoft Copilot",
+        "OneNote"
       ],
       "status": "",
       "release": "",
@@ -2825,7 +2826,8 @@
       "products": [
         "PowerPoint",
         "Excel",
-        "Word"
+        "Word",
+        "OneNote"
       ],
       "status": "",
       "release": "",
@@ -3520,7 +3522,8 @@
       "publisher": "MS Message Center (independent mirror)",
       "reference": "MC1559641",
       "products": [
-        "Microsoft Copilot"
+        "Microsoft Copilot",
+        "OneNote"
       ],
       "status": "",
       "release": "",
@@ -3880,6 +3883,22 @@
       "status": "",
       "release": "",
       "published": "2026-11",
+      "verifiedOn": "2026-11-20"
+    },
+    {
+      "id": "ignite-086ec8b7be228c3e",
+      "title": "Agentic productivity with new Copilot capabilities in OneNote",
+      "type": "Ignite",
+      "url": "https://ignite.microsoft.com/en-US/sessions/1787856604402001Ec2D-1791588173232001Cx8h",
+      "publisher": "Microsoft Ignite 2026 session",
+      "reference": "BRK207",
+      "products": [
+        "OneNote",
+        "Microsoft Copilot"
+      ],
+      "status": "",
+      "release": "",
+      "published": "",
       "verifiedOn": "2026-11-20"
     }
   ]
