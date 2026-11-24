@@ -661,6 +661,7 @@ function selectSource(type) {
   else url.searchParams.delete("source");
   history.replaceState(null, "", url);
   render();
+  document.dispatchEvent(new Event("roadmap:view"));
 }
 
 function productChip(product, count) {
@@ -719,8 +720,9 @@ async function load() {
       byId("product-chips").append(productChip(product,
         state.items.filter((item) => item.products.includes(product)).length));
     });
-    document.querySelectorAll("input, select, .tab, .ignite-action").forEach((control) => { control.disabled = false; });
+    document.querySelectorAll(".toolbar input, .toolbar select, .tab, .ignite-action").forEach((control) => { control.disabled = false; });
     render();
+    document.dispatchEvent(new Event("roadmap:ready"));
   } catch (error) {
     console.error("Public roadmap could not be displayed:", error);
     byId("results").replaceChildren();
@@ -728,6 +730,8 @@ async function load() {
     byId("error").hidden = false;
     byId("error").textContent = `${error instanceof Error ? error.message : "The snapshot could not be displayed."} Reload the page or open the public data link below.`;
     byId("result-count").textContent = "Snapshot unavailable";
+  } finally {
+    document.documentElement.removeAttribute("data-loading");
   }
 }
 

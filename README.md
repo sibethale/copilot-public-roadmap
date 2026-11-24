@@ -101,11 +101,37 @@ The row is hidden in the other tabs.
 The compact application layout uses source navigation, product pills, and an
 Ignite section. Counts come from the public snapshot, not an internal service.
 On smaller screens, source navigation wraps above the page and a product
-selector replaces the pills. Light/dark system preferences and the existing
-`clawpilotTheme=light` or `clawpilotTheme=dark` override remain supported.
+selector replaces the pills.
+
+The **Themes and Animations** button at the bottom of the desktop sidebar (fixed
+at bottom-left on mobile) opens an accessible chooser. Its 20 independently
+implemented presets are System, Light, Dark, Synthwave, Aurora, Carbon, Learn,
+Midnight, Sakura, Solaris, Blueprint, Nebula, Orbit, Terminal, Abyss, Arcane,
+Hyperdrive, Midnight Aurora, Prism, and Supernova. All fonts are local system
+fonts. No reference-app code, content, assets, private links, or theme downloads
+are included.
+
+Theme and seven animation preferences are stored only in this browser under
+`copilotRoadmapAppearance`; no usage history or visitor data is recorded.
+System follows device light/dark changes. A valid `clawpilotTheme` URL parameter
+takes priority over the saved theme; selecting another theme updates that
+parameter if present. Invalid theme names are ignored. Saved themes are applied
+before paint. If storage is unavailable or malformed, the page still works and
+the chooser reports that preferences could not be saved or restored.
+
+Individual switches control the opening mark intro, section build-up, counting
+totals, expanded-detail slide-in, panel swing, loading indicator, and theme
+backgrounds. All on/off and Replay opening intro are available. Reduced-motion
+device preferences override every switch, including already-running effects.
+Background scenes remain static when their animation is off. Counters finish
+at the actual snapshot totals, and animations never delay access to content.
+No new-item tracking or emphasis is added.
+
 See `PRODUCT.md` for the publication constraints and `DESIGN.md` for the visual
 and interaction rules. No reference-app screenshots, fonts, or private assets
 are distributed with this site.
 
 When changing CSS or JavaScript, increment the asset version in both resource
-URLs in `index.html` so the new layout cannot reuse older cached assets.
+URLs (including `appearance.js`) in `index.html` so the new layout cannot reuse
+older cached assets. Recompute the CSP hash whenever the inline theme bootstrap
+changes.

@@ -1,22 +1,36 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-loading>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A curated, public-source snapshot of Microsoft Copilot and agent announcements, roadmap features, and Message Center updates.">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-J58UBalZcJHrtIwJrzd4avduyvlO5Zl3lnhrswQfM/o='; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-eTWahb4OeBwfNVD8VPSaFv7xq5KisS+IFl5RLjwWjVQ='; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
   <title>Copilot &amp; agents | Public roadmap</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext x='6' y='46' font-size='44'%3EC/%3C/text%3E%3C/svg%3E">
   <script>
     (() => {
+      const choices = ["system", "light", "dark", "synthwave", "aurora", "carbon", "learn", "midnight", "sakura", "solaris", "blueprint", "nebula", "orbit", "terminal", "abyss", "arcane", "hyperdrive", "midnight-aurora", "prism", "supernova"];
+      const light = ["light", "aurora", "carbon", "learn", "sakura", "solaris"];
+      let saved;
+      try {
+        saved = JSON.parse(localStorage.getItem("copilotRoadmapAppearance"));
+      } catch (error) {
+        console.warn("Appearance preferences could not be restored:", error);
+      }
       const param = new URLSearchParams(window.location.search).get("clawpilotTheme");
-      const theme =
-        param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-      document.documentElement.setAttribute("data-theme", theme);
+      const choice = choices.includes(param) ? param : choices.includes(saved?.theme) ? saved.theme : "system";
+      const theme = choice === "system" ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : choice;
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.dataset.themeChoice = choice;
+      document.documentElement.dataset.colorScheme = light.includes(theme) ? "light" : "dark";
+      if (saved?.motion?.busy !== false && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        document.documentElement.dataset.motionBusy = "on";
+      }
     })();
   </script>
-  <link rel="stylesheet" href="styles.css?v=6">
-  <script src="app.js?v=6" defer></script>
+  <link rel="stylesheet" href="styles.css?v=7">
+  <script src="appearance.js?v=7" defer></script>
+  <script src="app.js?v=7" defer></script>
 </head>
 <body>
   <a class="skip" href="#results">Skip to updates</a>
@@ -40,8 +54,35 @@
       <p>Snapshot reviewed <strong id="snapshot-date">Loading...</strong></p>
       <p class="sidebar-note">Refreshed on request, not a live feed. Release plans can change.</p>
       <a href="data.json">Open public data <span aria-hidden="true">&nearr;</span></a>
+      <button id="appearance-open" class="appearance-trigger" type="button" aria-haspopup="dialog" aria-controls="appearance-panel" aria-expanded="false" disabled>
+        <span aria-hidden="true">&#9680;</span><span>Themes and Animations <small id="appearance-current">System</small></span>
+      </button>
     </div>
   </aside>
+  <dialog id="appearance-panel" class="appearance-panel" aria-labelledby="appearance-title" aria-describedby="appearance-description">
+    <header class="appearance-heading">
+      <h2 id="appearance-title">Themes and Animations</h2>
+      <button id="appearance-close" type="button" aria-label="Close themes and animations" autofocus>&times;</button>
+    </header>
+    <div class="appearance-content">
+      <p id="appearance-description">Pick a look and choose which animations play. Choices are saved in this browser only. Your device's reduced-motion preference always takes priority.</p>
+      <p id="appearance-message" class="appearance-message" role="status" hidden></p>
+      <section aria-labelledby="themes-title">
+        <h3 id="themes-title">Themes</h3>
+        <div id="theme-groups"></div>
+      </section>
+      <section class="motion-section" aria-labelledby="motion-title">
+        <h3 id="motion-title">Animations <span id="motion-enabled-count"></span></h3>
+        <div id="motion-options"></div>
+        <div class="motion-actions">
+          <button id="motion-all-on" type="button">All on</button>
+          <button id="motion-all-off" type="button">All off</button>
+          <button id="intro-replay" type="button">Replay opening intro</button>
+        </div>
+      </section>
+      <p class="appearance-footnote">Visual presets independently implemented for this public roadmap. No external fonts, tracking, or theme downloads.</p>
+    </div>
+  </dialog>
   <main>
     <section class="intro" aria-labelledby="page-title">
       <div class="page-icon" aria-hidden="true">

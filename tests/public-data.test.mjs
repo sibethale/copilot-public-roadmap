@@ -252,7 +252,7 @@ function browser(document = {}) {
   return runInNewContext(`${js.split('\nbyId("search").addEventListener')[0]}
     ({ validateItem, card, render, state, igniteSourceType, selectSource });`, {
     URL, URLSearchParams, location: { search: "", href: "https://example.org/?source=Ignite" },
-    history: { replaceState() {} }, document, Intl,
+    history: { replaceState() {} }, document: { dispatchEvent() {}, ...document }, Event, Intl,
   });
 }
 
@@ -409,17 +409,115 @@ test("Ignite source filters combine with search and products and reset when leav
 
 test("static site contains no credentials, raw exports, trackers or unsafe rendering", () => {
   const files = readdirSync(root).filter((name) => name !== ".git").sort();
-  assert.deepEqual(files, [".nojekyll", "DESIGN.md", "PRODUCT.md", "README.md", "app.js", "data.json", "index.html", "styles.css", "tests"]);
+  assert.deepEqual(files, [".nojekyll", "DESIGN.md", "PRODUCT.md", "README.md", "app.js", "appearance.js", "data.json", "index.html", "styles.css", "tests"]);
   const html = readFileSync(new URL("index.html", root), "utf8");
   const js = readFileSync(new URL("app.js", root), "utf8");
-  assert.doesNotMatch(html + js, /innerHTML|outerHTML|document\.write|eval\(|googletagmanager|google-analytics|access_token|client_secret|gh[pousr]_/);
+  const appearance = readFileSync(new URL("appearance.js", root), "utf8");
+  assert.doesNotMatch(html + js + appearance, /innerHTML|outerHTML|document\.write|eval\(|googletagmanager|google-analytics|access_token|client_secret|gh[pousr]_/);
+  assert.doesNotMatch(appearance, /fetch\(|XMLHttpRequest|sendBeacon|https?:\/\//);
   const inlineScript = html.match(/<script>([\s\S]*?)<\/script>/)[1];
   const hash = createHash("sha256").update(inlineScript).digest("base64");
   assert.ok(html.includes(`'sha256-${hash}'`), "CSP hash must authorize exactly the theme bootstrap");
   assert.ok(html.includes("default-src 'self'"));
   assert.ok(js.includes('fetch("data.json"'));
-  assert.equal((html.match(/<script/g) || []).length, 2);
-  for (const name of ["app.js", "styles.css"]) {
+  assert.equal((html.match(/<script/g) || []).length, 3);
+  for (const name of ["app.js", "appearance.js", "styles.css"]) {
     assert.ok(readFileSync(new URL(name, root), "utf8").length > 0, join(String(root), name));
   }
+});
+
+function appearanceFunctions() {
+  const appearance = readFileSync(new URL("appearance.js", root), "utf8");
+  return runInNewContext(`${appearance.split("\nstartAppearance();")[0]}
+    ({ appearancePreferences, resolvedTheme, themeChoices, darkThemes, motionChoices });`);
+}
+
+function bootstrap({ stored = null, query = "", prefersDark = false, reduced = false, blocked = false } = {}) {
+  const html = readFileSync(new URL("index.html", root), "utf8");
+  const script = html.match(/<script>([\s\S]*?)<\/script>/)[1];
+  const dataset = {};
+  const warnings = [];
+  runInNewContext(script, {
+    localStorage: { getItem() { if (blocked) throw new Error("Storage blocked"); return stored; } },
+    document: { documentElement: { dataset } },
+    window: {
+      location: { search: query },
+      matchMedia: (value) => ({ matches: value.includes("reduced-motion") ? reduced : prefersDark }),
+    },
+    console: { warn: (...args) => warnings.push(args) },
+    URLSearchParams,
+  });
+  return { dataset, warnings };
+}
+
+test("theme bootstrap honors saved choices, URL overrides, System and safe fallbacks before rendering", () => {
+  const { themeChoices, darkThemes } = appearanceFunctions();
+  for (const [theme] of themeChoices) {
+    for (const prefersDark of [false, true]) {
+      const { dataset } = bootstrap({ stored: JSON.stringify({ theme }), prefersDark });
+      assert.equal(dataset.themeChoice, theme);
+      assert.equal(dataset.theme, theme === "system" ? (prefersDark ? "dark" : "light") : theme);
+      assert.equal(dataset.colorScheme, darkThemes.has(dataset.theme) ? "dark" : "light");
+    }
+  }
+  assert.equal(bootstrap({ stored: '{"theme":"sakura"}', query: "?source=Ignite&clawpilotTheme=abyss" }).dataset.theme, "abyss");
+  assert.equal(bootstrap({ stored: '{"theme":"sakura"}', query: "?clawpilotTheme=unreviewed" }).dataset.theme, "sakura");
+  assert.equal(bootstrap({ stored: '{"theme":"unreviewed"}', prefersDark: true }).dataset.theme, "dark");
+  const blocked = bootstrap({ blocked: true });
+  assert.equal(blocked.dataset.theme, "light");
+  assert.equal(blocked.warnings.length, 1);
+  const malformed = bootstrap({ stored: "not json", prefersDark: true });
+  assert.equal(malformed.dataset.theme, "dark");
+  assert.equal(malformed.warnings.length, 1);
+  assert.equal(bootstrap({ reduced: true }).dataset.motionBusy, undefined);
+  assert.equal(bootstrap({ stored: '{"motion":{"busy":false}}' }).dataset.motionBusy, undefined);
+});
+
+test("appearance preferences retain individual off switches and reject malformed stored data", () => {
+  const { appearancePreferences, resolvedTheme } = appearanceFunctions();
+  const prefs = appearancePreferences('{"theme":"terminal","motion":{"intro":false,"count":false,"background":false,"panel":true,"busy":"false"}}');
+  assert.equal(prefs.theme, "terminal");
+  assert.equal(prefs.motion.intro, false);
+  assert.equal(prefs.motion.count, false);
+  assert.equal(prefs.motion.background, false);
+  assert.equal(prefs.motion.panel, true);
+  assert.equal(prefs.motion.busy, true);
+  assert.equal(appearancePreferences('{"theme":"unknown","motion":null}').theme, "system");
+  for (const value of ["not json", "null", "[]", "false"]) {
+    assert.throws(() => appearancePreferences(value));
+  }
+  assert.equal(resolvedTheme("system", true), "dark");
+  assert.equal(resolvedTheme("system", false), "light");
+  assert.equal(resolvedTheme("sakura", true), "sakura");
+});
+
+test("generated animation controls cannot collide with static page IDs", () => {
+  const { motionChoices } = appearanceFunctions();
+  const html = readFileSync(new URL("index.html", root), "utf8");
+  const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
+  ids.push(...motionChoices.map(([key]) => `motion-${key}`));
+  assert.equal(new Set(ids).size, ids.length, "Every control and label must have a unique ID");
+});
+
+test("counting uses frame timestamps without negative totals and finishes at the exact count", () => {
+  const appearance = readFileSync(new URL("appearance.js", root), "utf8");
+  const countTotals = appearance.match(/  function countTotals\(\) \{[\s\S]*?\n  \}/)[0];
+  const node = { textContent: "498" };
+  const frames = [];
+  const counters = new Map();
+  runInNewContext(`${countTotals}\ncountTotals();`, {
+    enabled: () => true,
+    document: { querySelectorAll: () => [node] },
+    performance: { now: () => 1000 },
+    requestAnimationFrame: (frame) => frames.push(frame),
+    counters,
+  });
+  frames.shift()(850);
+  assert.equal(node.textContent, "0");
+  frames.shift()(1060);
+  assert.ok(Number(node.textContent) > 0 && Number(node.textContent) < 498);
+  frames.shift()(1270);
+  assert.equal(node.textContent, "498");
+  assert.equal(counters.size, 0);
+  assert.equal(frames.length, 0);
 });
