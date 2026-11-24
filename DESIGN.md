@@ -45,6 +45,9 @@ filter panel rather than decorating every update.
 
 - Source buttons expose the selected source with `aria-pressed`.
 - Product pills and the product selector are two views of the same filter.
+- In Ignite only, show a labelled Source type pill row beneath the existing
+  controls. Combine it with search and product selection; wrap pills on mobile.
+  Show full Ignite category counts and reset source type when leaving Ignite.
 - Counts describe the complete public snapshot, not filtered or private data.
 - The result count announces changes; the result heading names the source.
 - Retain loading, explicit error, no-results, reset, and no-JavaScript states.

@@ -99,11 +99,14 @@ h1 { margin: 0 0 4px; font-size: 30px; font-weight: 700; line-height: 1.2; lette
 .policy p { max-width: 75ch; margin: 4px 0 16px; line-height: 1.7; }
 .filter-panel { padding: 16px; border: 1px solid var(--cp-border); border-radius: 18px; background: var(--cp-surface); box-shadow: var(--cp-shadow); animation: panel-settle 320ms cubic-bezier(.16, 1, .3, 1); }
 .product-chips { display: flex; flex-wrap: wrap; gap: 8px; min-height: 36px; }
-.product-chip { display: inline-flex; align-items: center; gap: 5px; padding: 6px 12px; border: 1px solid var(--cp-border); border-radius: 99px; background: var(--cp-surface); color: var(--cp-text); font-size: 13px; line-height: 1.5; text-align: left; }
-.product-chip span { color: var(--cp-text-muted); font-variant-numeric: tabular-nums; }
-.product-chip:hover { background: var(--cp-accent-soft); border-color: var(--cp-accent); }
-.product-chip.active { background: var(--cp-accent); color: var(--cp-accent-fg); border-color: var(--cp-accent); font-weight: 600; }
-.product-chip.active span { color: inherit; }
+.product-chip, .source-chip { display: inline-flex; align-items: center; gap: 5px; padding: 6px 12px; border: 1px solid var(--cp-border); border-radius: 99px; background: var(--cp-surface); color: var(--cp-text); font-size: 13px; line-height: 1.5; text-align: left; }
+.product-chip span, .source-chip span { color: var(--cp-text-muted); font-variant-numeric: tabular-nums; }
+.product-chip:hover, .source-chip:hover { background: var(--cp-accent-soft); border-color: var(--cp-accent); }
+.product-chip.active, .source-chip.active { background: var(--cp-accent); color: var(--cp-accent-fg); border-color: var(--cp-accent); font-weight: 600; }
+.product-chip.active span, .source-chip.active span { color: inherit; }
+.source-filter { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--cp-border); }
+.source-filter h3 { margin: 0 0 8px; font-size: 13px; font-weight: 500; }
+.source-chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .toolbar { display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: 16px; margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--cp-border); }
 label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; font-weight: 500; }
 input, select { width: 100%; min-width: 0; min-height: 38px; padding: 8px 11px; border: 1px solid var(--cp-border-strong); border-radius: 11px; background: var(--cp-surface); color: var(--cp-text); font-size: 14px; }

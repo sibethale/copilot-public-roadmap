@@ -484,7 +484,11 @@ const publicVideoUrls = new Set([
 ]);
 const types = new Set(["Roadmap", "Blog", "Message Center", "Ignite"]);
 const requestedType = new URLSearchParams(location.search).get("source");
-const state = { items: [], type: types.has(requestedType) ? requestedType : "" };
+const state = { items: [], type: types.has(requestedType) ? requestedType : "", igniteSource: "" };
+const igniteSourceLabels = {
+  "": "All sources", session: "Sessions", news: "Book of News", blog: "Blogs",
+  roadmap: "Roadmap", message: "Message Center", pdf: "PDF guides",
+};
 const byId = (id) => document.getElementById(id);
 
 function publicUrl(value) {
@@ -598,11 +602,23 @@ function card(item) {
   return article;
 }
 
+function igniteSourceType(item) {
+  const url = new URL(item.url);
+  if (item.session) return "session";
+  if (url.hostname === "news.microsoft.com") return "news";
+  if (url.hostname === "msmessagecenter.com") return "message";
+  if (url.href === publicDocumentUrl) return "pdf";
+  if (url.hostname === "www.microsoft.com" && url.pathname === "/en-us/microsoft-365/roadmap") return "roadmap";
+  if (["www.microsoft.com", "techcommunity.microsoft.com", "blogs.microsoft.com", "devblogs.microsoft.com"].includes(url.hostname)) return "blog";
+  throw new Error("The snapshot contains an unsupported Ignite source type.");
+}
+
 function render() {
   const search = byId("search").value.trim().toLocaleLowerCase();
   const product = byId("product").value;
   const items = state.items.filter((item) =>
     (!state.type || item.type === state.type) &&
+    (state.type !== "Ignite" || !state.igniteSource || igniteSourceType(item) === state.igniteSource) &&
     (!product || item.products.includes(product)) &&
     `${item.title} ${item.reference} ${item.products.join(" ")} ${item.status} ${item.publisher} ${item.type === "Ignite" ? "Ignite 2026" : item.type} ${item.session ? `${item.session.summary} ${item.session.takeaways.join(" ")}` : ""}`
       .toLocaleLowerCase().includes(search));
@@ -619,6 +635,12 @@ function render() {
     "": "All updates", Roadmap: "Roadmap features", Blog: "Public blogs",
     "Message Center": "Message Center updates", Ignite: "Ignite 2026 updates",
   }[state.type];
+  byId("ignite-source-filter").hidden = state.type !== "Ignite";
+  document.querySelectorAll(".source-chip").forEach((chip) => {
+    const active = chip.dataset.igniteSource === state.igniteSource;
+    chip.classList.toggle("active", active);
+    chip.setAttribute("aria-pressed", String(active));
+  });
   document.querySelectorAll(".tab").forEach((tab) => {
     const active = tab.dataset.type === state.type;
     tab.classList.toggle("active", active);
@@ -633,6 +655,7 @@ function render() {
 
 function selectSource(type) {
   state.type = type;
+  if (type !== "Ignite") state.igniteSource = "";
   const url = new URL(location.href);
   if (state.type) url.searchParams.set("source", state.type);
   else url.searchParams.delete("source");
@@ -664,6 +687,25 @@ async function load() {
     }
     data.items.forEach(validateItem);
     state.items = data.items;
+    const igniteItems = state.items.filter((item) => item.type === "Ignite");
+    const sourceCounts = new Map(Object.keys(igniteSourceLabels).map((key) => [key, 0]));
+    igniteItems.forEach((item) => {
+      const source = igniteSourceType(item);
+      sourceCounts.set(source, sourceCounts.get(source) + 1);
+    });
+    sourceCounts.set("", igniteItems.length);
+    Object.entries(igniteSourceLabels).forEach(([source, label]) => {
+      const chip = element("button", "source-chip", label);
+      chip.type = "button";
+      chip.dataset.igniteSource = source;
+      chip.setAttribute("aria-pressed", "false");
+      chip.append(element("span", "", String(sourceCounts.get(source))));
+      chip.addEventListener("click", () => {
+        state.igniteSource = source;
+        render();
+      });
+      byId("ignite-source-chips").append(chip);
+    });
     byId("snapshot-date").textContent = dateLabel(data.snapshotDate);
     document.querySelectorAll("[data-count]").forEach((node) => {
       node.textContent = String(state.items.filter((item) =>
@@ -697,6 +739,7 @@ document.querySelectorAll(".tab").forEach((tab) => tab.addEventListener("click",
 byId("explore-ignite").addEventListener("click", () => selectSource("Ignite"));
 byId("reset").addEventListener("click", () => {
   state.type = "";
+  state.igniteSource = "";
   byId("search").value = "";
   byId("product").value = "";
   byId("sort").value = "recent";

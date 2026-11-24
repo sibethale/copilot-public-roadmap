@@ -250,8 +250,9 @@ test("242 unique session briefs contain bounded details and matching reviewed li
 
 function browser(document = {}) {
   return runInNewContext(`${js.split('\nbyId("search").addEventListener')[0]}
-    ({ validateItem, card, render, state });`, {
-    URL, URLSearchParams, location: { search: "" }, document, Intl,
+    ({ validateItem, card, render, state, igniteSourceType, selectSource });`, {
+    URL, URLSearchParams, location: { search: "", href: "https://example.org/?source=Ignite" },
+    history: { replaceState() {} }, document, Intl,
   });
 }
 
@@ -320,7 +321,7 @@ test("session cards render safe native details and outbound videos without embed
 });
 
 test("search includes session summaries and takeaways while preserving source and product filters", () => {
-  const nodes = new Map(["search", "product", "sort", "results", "empty", "result-count", "results-heading"]
+  const nodes = new Map(["search", "product", "sort", "results", "empty", "result-count", "results-heading", "ignite-source-filter"]
     .map((id) => [id, new Node()]));
   const { render, state } = browser({
     createElement: (tag) => new Node(tag),
@@ -346,6 +347,64 @@ test("search includes session summaries and takeaways while preserving source an
   nodes.get("product").value = "unmatched product";
   render();
   assert.equal(nodes.get("results").children.length, 0);
+});
+
+test("Ignite source categories partition the public event set without changing data", () => {
+  const { igniteSourceType } = browser();
+  const counts = {};
+  for (const item of data.items.filter((record) => record.type === "Ignite")) {
+    const source = igniteSourceType(item);
+    counts[source] = (counts[source] || 0) + 1;
+    if (item.session) assert.equal(source, "session");
+    if (source === "roadmap") assert.match(item.url, /\/roadmap\?id=/);
+    if (source === "blog") assert.ok(new URL(item.url).pathname.includes("/blog/"));
+  }
+  assert.deepEqual(counts, { pdf: 1, session: 242, blog: 39, roadmap: 1, message: 13, news: 45 });
+  assert.throws(() => igniteSourceType({ url: "https://example.org/unreviewed" }), /unsupported Ignite source type/);
+});
+
+test("Ignite source filters combine with search and products and reset when leaving Ignite", () => {
+  const nodes = new Map(["search", "product", "sort", "results", "empty", "result-count", "results-heading", "ignite-source-filter"]
+    .map((id) => [id, new Node()]));
+  const chips = ["", "session", "news", "blog", "roadmap", "message", "pdf"].map((source) => {
+    const node = new Node("button");
+    node.dataset = { igniteSource: source };
+    return node;
+  });
+  const { render, state, selectSource, igniteSourceType } = browser({
+    createElement: (tag) => new Node(tag),
+    getElementById: (id) => nodes.get(id),
+    querySelectorAll: (selector) => selector === ".source-chip" ? chips : [],
+  });
+  state.items = data.items;
+  state.type = "Ignite";
+  for (const chip of chips) {
+    state.igniteSource = chip.dataset.igniteSource;
+    render();
+    const expected = data.items.filter((item) => item.type === "Ignite" &&
+      (!state.igniteSource || igniteSourceType(item) === state.igniteSource)).length;
+    assert.equal(nodes.get("results").children.length, expected);
+    assert.equal(nodes.get("ignite-source-filter").hidden, false);
+    assert.equal(chip.attributes["aria-pressed"], "true");
+    assert.equal(chips.filter((node) => node.attributes["aria-pressed"] === "true").length, 1);
+  }
+  state.igniteSource = "session";
+  nodes.get("search").value = "BRK207";
+  nodes.get("product").value = "OneNote";
+  render();
+  assert.equal(nodes.get("results").children.length, 1);
+  state.igniteSource = "blog";
+  render();
+  assert.equal(nodes.get("results").children.length, 0);
+  assert.equal(nodes.get("empty").hidden, false);
+  selectSource("Blog");
+  assert.equal(state.igniteSource, "");
+  assert.equal(nodes.get("ignite-source-filter").hidden, true);
+  nodes.get("search").value = "";
+  nodes.get("product").value = "";
+  selectSource("Ignite");
+  assert.equal(nodes.get("results").children.length, 341);
+  assert.equal(nodes.get("ignite-source-filter").hidden, false);
 });
 
 test("static site contains no credentials, raw exports, trackers or unsafe rendering", () => {

@@ -15,8 +15,8 @@
       document.documentElement.setAttribute("data-theme", theme);
     })();
   </script>
-  <link rel="stylesheet" href="styles.css?v=5">
-  <script src="app.js?v=5" defer></script>
+  <link rel="stylesheet" href="styles.css?v=6">
+  <script src="app.js?v=6" defer></script>
 </head>
 <body>
   <a class="skip" href="#results">Skip to updates</a>
@@ -75,6 +75,10 @@
           <label for="sort">Sort by
             <select id="sort" disabled><option value="recent">Newest first</option><option value="title">Title A&ndash;Z</option><option value="source">Source type</option></select>
           </label>
+        </div>
+        <div id="ignite-source-filter" class="source-filter" hidden>
+          <h3 id="ignite-source-label">Source type</h3>
+          <div id="ignite-source-chips" class="source-chips" role="group" aria-labelledby="ignite-source-label"></div>
         </div>
       </div>
       <section class="ignite-banner" aria-labelledby="ignite-heading">

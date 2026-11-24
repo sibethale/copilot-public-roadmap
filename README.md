@@ -92,6 +92,11 @@ remain visible inside the native expandable details.
 Static HTML, CSS, and JavaScript, with no external packages, analytics, remote
 fonts, build pipeline, or authentication. Search, product filters, source
 navigation, and sorting all run locally over the reviewed public snapshot.
+In the Ignite 2026 tab, a Source type row below the existing filters narrows
+results to sessions, Book of News, blogs, roadmap, Message Center, or PDF guides.
+Counts describe the full Ignite set; source type combines with search and product
+filters and resets to All sources when leaving Ignite or clearing all filters.
+The row is hidden in the other tabs.
 
 The compact application layout uses source navigation, product pills, and an
 Ignite section. Counts come from the public snapshot, not an internal service.
