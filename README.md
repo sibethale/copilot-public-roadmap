@@ -11,17 +11,28 @@ The site publishes public-source records, not an export of an internal list:
   from Microsoft's anonymous public roadmap API.
 - The existing blog feed is deduplicated by article. Titles come from the public article,
   not private notes or edited list titles.
-- The **Ignite 2026** filter includes 100 reviewed announcements and public
+- The **Ignite 2026** filter includes 341 reviewed announcements and public
   sessions alongside the source-level feed. Concise factual titles are verified
   against the public Book of News, product blogs, public roadmap, Copilot Credits
   Guide (PDF), session catalog, or labelled Message Center mirrors.
   Multiple announcements can share a source; they are not duplicate
   article records. Open `?source=Ignite` to link directly to this view.
-- The OneNote session BRK207 uses its anonymously accessible session title,
-  canonical URL, and public session code. Only this verified session URL is
-  permitted on the Ignite catalog host. No transcript, video, attendee data, or
-  private catalog fields are republished. Session dates are not treated as
-  publication or release dates, and a session listing is not a release commitment.
+- All 242 reviewed session notes are represented by a public session brief.
+  BRK207 retains its existing canonical URL and identity; the other 241 sessions
+  use individually verified public catalog URLs. The original 257 records remain.
+  Each brief includes a concise summary, two or three takeaways, product tags,
+  and evidence limitations. Public descriptions and, where explicitly labelled,
+  Microsoft's AI-generated session summaries support the briefs. These are not
+  transcript-complete reviews, and unsupported local analysis is not copied.
+- The browser permits only the explicitly reviewed session URLs and 230 verified
+  official YouTube videos, not arbitrary pages or videos on those hosts.
+  Unavailable, third-party, and mismatched videos are omitted; affected briefs
+  direct readers to their public session page for recordings. Videos are linked,
+  never embedded or fetched automatically.
+- No transcript, raw local note, attendee data, or private catalog field is
+  republished. Session dates are not treated as publication or release dates,
+  and a session listing is not a release commitment. Sponsored sessions remain
+  identifiable by their BRKSP/THRSP session codes.
 - The AI Flex Plan entry is supported by the November 2026 Copilot Credits Guide,
   PDF page 4 (printed page 3). The browser permits only that exact public PDF URL
   on Microsoft's CDN, not arbitrary files on the same host. Its publication date
@@ -30,12 +41,15 @@ The site publishes public-source records, not an export of an internal list:
 - Message Center entries come only from anonymously accessible pages on
   MS Message Center, an independent third-party mirror. The mirror is not the
   Microsoft 365 admin center and is labelled accordingly.
-- NDA entries, internal annotations, customer data, people, tenant identifiers,
+- NDA entries, internal annotations, private customer data, personal contact details, tenant identifiers,
   private URLs, credentials, unavailable sources, and unverified metadata are
   excluded. No private data is hidden inside client-side files or Git history.
 
 Only public-source titles, public URLs, source labels, public identifiers,
-public product tags, and source-supported dates/statuses belong in `data.json`.
+public product tags, source-supported dates/statuses, and reviewed session
+briefs belong in `data.json`. `Cross-product` means the public evidence does not
+identify a product covered by the site's product taxonomy; it is not an inferred
+product association.
 No SharePoint connection, app registration, token, or secret is needed to view
 or deploy the site.
 
@@ -56,8 +70,9 @@ node --test tests/public-data.test.mjs
 ```
 
 Commit only the reviewed site files and publish from `main` / repository root
-using GitHub Pages. Display the review date in `snapshotDate`. Roadmap estimates
-can change, and an unavailable feature may have been removed from the live API.
+using GitHub Pages. Display the latest refresh date in `snapshotDate`, but retain
+each existing record's actual `verifiedOn` date unless its source was rechecked.
+Roadmap estimates can change, and an unavailable feature may have been removed from the live API.
 This intentionally conservative snapshot is not a claim that every public
 announcement has been included.
 
@@ -67,6 +82,10 @@ release dates or statuses from private annotations: those fields remain empty
 for event details unless separately verified. Preserve the existing source
 records when refreshing event details. Review every claim, not just whether
 its linked page is accessible; use a more precise public citation where needed.
+Schema version 2 adds an optional `session` object containing `summary`,
+`takeaways`, `videoUrl`, and `evidence`. It is allowed only on reviewed Ignite
+session records. Summaries and takeaways are searchable; evidence limitations
+remain visible inside the native expandable details.
 
 ## Site
 

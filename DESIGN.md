@@ -23,6 +23,9 @@ term, then open a directly cited public source.
 - Render linked update titles in a two-column grid; use three columns only on
   wide displays and one when the available width becomes constrained.
 - Keep provenance, public identifiers, product tags, and supported dates visible.
+- Session cards show concise summaries and native expandable details with
+  takeaways, verified official video links, and clearly labelled source limits.
+  Preserve the compact card layout; do not embed videos or open modal readers.
 
 ## Tokens and type
 
@@ -47,6 +50,8 @@ filter panel rather than decorating every update.
 - Retain loading, explicit error, no-results, reset, and no-JavaScript states.
 - Keep a visible keyboard focus ring and a skip-to-updates link.
 - Honor reduced motion; only the filter panel has a brief settling animation.
+- Native session disclosures work with keyboard and touch. Expanded copy wraps,
+  and summary/takeaway content participates in the existing search.
 
 ## Responsive behavior
 

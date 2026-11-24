@@ -131,6 +131,14 @@ h2 { margin: 0; font-size: 18px; font-weight: 700; line-height: 1.4; letter-spac
 .title-link:hover { text-decoration: underline; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
 .tag { padding: 2px 7px; border: 1px solid var(--cp-border); border-radius: 6px; color: var(--cp-text-muted); font-size: 11px; }
+.session-summary { margin: 0 0 12px; max-width: 70ch; color: var(--cp-text-muted); font-size: 13px; overflow-wrap: anywhere; }
+.session-details { margin-bottom: 16px; font-size: 13px; }
+.session-details summary { width: fit-content; padding: 4px 0; color: var(--cp-link); font-weight: 600; }
+.session-details h4 { margin: 12px 0 6px; font-size: 13px; }
+.session-details ul { margin: 0 0 12px; padding-left: 20px; }
+.session-details li { margin-bottom: 8px; overflow-wrap: anywhere; }
+.session-video { display: inline-block; padding: 4px 0; font-weight: 600; }
+.session-evidence { margin: 12px 0 0; max-width: 70ch; color: var(--cp-text-soft); font-size: 12px; overflow-wrap: anywhere; }
 .timing { margin: 0 0 14px; color: var(--cp-text-soft); font-size: 12px; }
 .source-line { margin-top: auto; padding-top: 12px; border-top: 1px solid var(--cp-border); }
 .source-line a { display: flex; justify-content: space-between; gap: 8px; font-size: 12px; font-weight: 600; text-decoration: none; }

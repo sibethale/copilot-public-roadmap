@@ -20,10 +20,13 @@ citations so readers can find an update and inspect its source.
 
 - Static HTML, CSS, and JavaScript hosted on GitHub Pages.
 - Search, product filters, source filters, sorting, and direct source URLs.
-- A dedicated Ignite 2026 view with individual verified announcements.
+- A dedicated Ignite 2026 view with verified announcements and 242 session briefs.
+- Searchable session summaries, expandable takeaways, source limitations, and
+  verified official video links. No embedded video or raw session-note exports.
 - Reviewed snapshots refreshed on request, not a live synchronization service.
-- Publish public-source information only. No private data, internal annotations,
-  people, tenant identifiers, credentials, or restricted content.
+- Publish public-source information only. No private customer data, internal
+  annotations, personal contact details, tenant identifiers, credentials, or
+  restricted content.
 - Retain source provenance and clearly label independent Message Center mirrors.
 - No analytics, authentication, remote fonts, or runtime dependencies.
 
